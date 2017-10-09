@@ -1,0 +1,1166 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+@font-face {
+    font-family: 'TrajanProRegular';
+    src: url('../fonts/web/TrajanPro-Regular_0.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TrajanProBold';
+    src: url('../fonts/web/TrajanPro-Bold_0.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaRegular';
+    src: url('../fonts/web/Bellota-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaLightItalic';
+    src: url('../fonts/web/Bellota-LightItalic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaLight';
+    src: url('../fonts/web/Bellota-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaItalic';
+    src: url('../fonts/web/Bellota-Italic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaBoldItalic';
+    src: url('../fonts/web/Bellota-BoldItalic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BellotaBold';
+    src: url('../fonts/web/Bellota-Bold.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** HEADER SECTION **/
+#header {
+    background: url(images/MergedLayers.png);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.navbar-inverse {
+    background-color: rgba(8, 8, 8, 0.6);
+    border: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(243, 243, 243, 0.5);
+}
+
+.navbar {
+    min-height: 42px !important;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 4px;
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: BellotaRegular;
+    font-weight: 300;
+    font-size: 17px;
+    color: #d8af58;
+    line-height: 24px;
+}
+
+#header > nav:nth-child(1) > div > div.navbar-header > a {
+    -webkit-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+#header > nav:nth-child(1) > div > div.navbar-header > a:hover {
+    color:#e9be60;
+}
+
+.navbar-inverse .navbar-nav > li > a > span {
+    display: inline-block;
+    background: url(images/right-arrow.png);
+    height: 14px;
+    width: 7px;
+    margin-right: 3px;
+}
+
+.bottom-navbar {
+    position: absolute;
+    bottom: 3px;
+    margin-bottom: 0px;
+    width: 100%;
+    background: url(images/meniu-juosta.png);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    border-bottom: 0px;
+}
+
+.bottom-navbar .container,
+.bottom-navbar .navbar-collapse{
+    padding: 0;
+}
+
+.bottom-navbar .navbar-nav > li > a {
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #fff;
+    -webkit-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+.active_tops {
+   color: #e9be60 !important; 
+}
+
+.bottom-navbar .navbar-nav > li > a:hover {
+    color: #e9be60;
+}
+
+.bottom-navbar .navbar-nav > li {
+    padding-right: 5px;
+    margin-top: 3px;
+}
+
+.bottom-navbar .navbar-nav > li > a.active_bottom {
+    color: #e9be60 !important;
+}
+
+.bottom-navbar .navbar-nav > li > a.active_bottom::before {
+    content: '';
+    display:block;
+    width: 17px;
+    height: 46px;
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    background-repeat: no-repeat;
+    background: url(images/Treble_Clef.png);
+}
+
+
+
+/** INDEX PAGE - ABOUT SECTION **/
+#main_about {
+    height: 315px;
+    background-color: #0a0b0d;
+}
+
+#main_about p {
+    color: #cdb1a5;
+    font-family: BellotaItalic;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 38px;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .col-sm-offset-1 {
+        margin-left: 6.33333333%;
+    }
+}
+
+/** INDEX PAGE - ABOUT HER SECTION **/
+#main_about_her {
+    padding: 60px 0;
+    position: relative;
+}
+
+#main_about_her .main_img_about {
+    height: 148px;
+    width: 455px;
+    margin-top: 50px;
+}
+
+#main_about_her img {
+    height: 219px;
+    width: 346px;
+    margin: 0 auto;
+    display: block;
+}
+
+#main_about_her .bottom_img {
+    background: url(images/Music_wave.png);
+    bottom: -140px;
+    height: 559px;
+    width: 100%;
+    position: absolute;
+}
+
+.padding-none {
+    padding: 0;
+}
+
+.left-margin {
+    padding-left: 25px;
+}
+
+#main_about_her p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#main_about_her .about_p {
+    margin-bottom: 30px;
+}
+
+
+#main_about_her .about_p2 {
+     margin: 30px 0;
+}
+
+/** ARCHYVAS PAGE **/
+#archyvas {
+    padding: 50px 0;
+    background-color: #26170b;
+}
+
+.archyvas_juosta {
+    width: 100%;
+    font-size: 16px;
+}
+
+.archyvas_juosta:nth-child(1) {
+    margin-top: 30px;
+}
+
+.archyvas_juosta {
+    margin-top: 5px;
+}
+
+.archyvas-data {
+    width: 22%;
+    font-family: TrajanProRegular;
+    color: #e9be60;
+    font-weight: 400;
+    display: inline-block;
+    float: left;
+}
+
+.archyvas-informacija {
+    width: 78%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fffafc;
+    display: inline-block;
+}
+
+.archyvas-data2 {
+    width: 100%;
+    font-family: TrajanProRegular;
+    color: #e9be60;
+    font-weight: 400;
+    margin-left: 190px;
+}
+
+.archyvas-data2 a {
+    width: 100%;
+    font-family: TrajanProRegular;
+    color: #e9be60;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/** GALERIJA PAGE **/
+#galerija {
+    padding: 80px 0 50px;
+    background-color: #000000;
+}
+
+#galerija .img_background {
+    width: 271px;
+    height: 213px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #4f3a25;
+    margin-top: 15px;
+    position: relative;
+}
+
+#galerija .img_background .small-img {
+    width: 260px;
+    height: 203px;
+    margin: 5px 0 0 5px;
+}
+
+#galerija .img_background .img_info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top:0;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: ease-in 0.2s;
+    transition: ease-in 0.2s;
+}
+
+
+
+.for-high {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.for-high img {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px !important;
+	margin: 0 auto;
+}
+
+.img-on-hovers {
+	background: url('/assets/images/download-BTN.png');
+}
+
+#galerija .img_background:hover .img_info {
+    opacity: 1;
+}
+
+.onHover {
+    display: block !important;
+}
+
+#galerija .img_background .img_info p.title_info {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-top: 80px;
+}
+
+#galerija .img_background .img_info p.description_info {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.gallery_bottom h2:nth-child(1) {
+    margin-top: 120px;
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    color: #dcad52;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.gallery_bottom h2:nth-child(2) {
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.gallery_bottom h2 a > img {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/** KONCERTU GRAFIKAS - PAGE **/
+.archyvas_juosta .metai {
+    display: inline-block;
+    margin-right: 60px;
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.archyvas_juosta .metai a.active_koncertu_metai {
+    color: #e1b75c;
+}
+
+.archyvas_juosta .metai a {
+    color: #fff8fe;
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+}
+
+.archyvas_juosta .metai a:hover {
+    text-decoration: none;
+    color: #e1b75c;
+}
+
+/** DISKOGRAFIJA - PAGE **/
+#diskografija {
+    padding: 70px 0;
+    background-color: #231000;
+}
+
+#diskografija h2 {
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    font-size: 20px;
+    color: #d6d6d6;
+}
+
+.diskografija_box {
+    text-align: center;
+    display: inline-block;
+    width: 229px;
+    height: 229px;
+    background-color: #4d3922;
+    margin-right: 64px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.disk-small-img {
+    width: 219px;
+    height: 220px;
+    margin: 5px 0 0 5px;
+}
+
+.diskografija_box:nth-child(5),
+.diskografija_box:nth-child(9),
+.diskografija_box:nth-child(13),
+.diskografija_box:nth-child(17),
+.diskografija_box:nth-child(21),
+.diskografija_box:nth-child(25),
+.diskografija_box:nth-child(29),
+.diskografija_box:nth-child(33),
+.diskografija_box:nth-child(37),
+.diskografija_box:nth-child(41) {
+    margin-right: 0;
+}
+
+.diskografija_box:nth-child(6),
+.diskografija_box:nth-child(7),
+.diskografija_box:nth-child(8),
+.diskografija_box:nth-child(9),
+.diskografija_box:nth-child(10),
+.diskografija_box:nth-child(11),
+.diskografija_box:nth-child(12),
+.diskografija_box:nth-child(13),
+.diskografija_box:nth-child(14),
+.diskografija_box:nth-child(15),
+.diskografija_box:nth-child(16),
+.diskografija_box:nth-child(17),
+.diskografija_box:nth-child(18),
+.diskografija_box:nth-child(19),
+.diskografija_box:nth-child(20),
+.diskografija_box:nth-child(21),
+.diskografija_box:nth-child(22),
+.diskografija_box:nth-child(23),
+.diskografija_box:nth-child(24),
+.diskografija_box:nth-child(25),
+.diskografija_box:nth-child(26),
+.diskografija_box:nth-child(27),
+.diskografija_box:nth-child(28),
+.diskografija_box:nth-child(29),
+.diskografija_box:nth-child(30),
+.diskografija_box:nth-child(31),
+.diskografija_box:nth-child(32),
+.diskografija_box:nth-child(33),
+.diskografija_box:nth-child(34),
+.diskografija_box:nth-child(35),
+.diskografija_box:nth-child(36),
+.diskografija_box:nth-child(37),
+.diskografija_box:nth-child(38),
+.diskografija_box:nth-child(39),
+.diskografija_box:nth-child(40), {
+    margin-top: 50px;
+}
+
+.disk_box {
+    padding-left: 0px;
+}
+
+.diskografija_box .img_info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top:0;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: ease-in 0.2s;
+    transition: ease-in 0.2s;
+}
+
+.diskografija_box:hover .img_info {
+    opacity: 1;
+}
+
+
+.diskografija_box .img_info p.title_info {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.diskografija_box .img_info p.description_info {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+#dvd {
+    padding: 70px 0;
+    background-color: #190000;
+}
+
+#dvd h2 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+    color: #d6d6d6;
+    font-weight: 400;
+}
+
+#dvd .left-side {
+/*    width: 35%;*/
+    display: inline-block;
+    float:left;
+}
+
+#dvd .right-side {
+    width: 65%;
+    display: inline-block;
+    float:left;
+}
+
+#dvd .dvd_box {
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: #4d3723;
+    position: relative;
+}
+
+#dvd .dvd_box .dvd-small-img {
+    position: absolute;
+    width: 240px;
+    height: 340px;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+#dvd .right-side .youtube-g {
+    display: inline-block;
+    width: 344px;
+    height: 220px;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#dvd .right-side .youtube-g a {
+    position: absolute;
+    width: 344px;
+    height: 181px;
+    background-color: #4d3723;
+    
+}
+
+#dvd .right-side .youtube-g:nth-child(3),
+#dvd .right-side .youtube-g:nth-child(5){
+    margin-right: 0px;
+}
+
+#dvd .right-side .youtube-g p {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d6d6d6;
+}
+
+#dvd .right-side a iframe {
+    width: 334px;
+    height: 171px;
+    margin: 5px 0 0 5px;
+}
+
+/** KONTAKTAI - PAGE **/
+#kontaktai {
+    padding: 70px 0;
+    height: 380px;
+    background-color: #ffffff;
+}
+
+#kontaktai h2 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+    font-weight: 400;
+    color: #351e0d;
+    padding-left: 24px;
+}
+
+#kontaktai h3 {
+    font-family: TrajanPro;
+    font-size: 24px;
+    color: #eba342;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+#kontaktai .contact {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#kontaktai .contact .contact_row {
+    width: 100%;
+    position: absolute;
+    left: -20px;
+    margin-top: 20px;
+}
+
+#kontaktai .contact .contact_row img {
+    display: inline-block;
+    float: left;
+    margin-right: 13px;
+}
+
+#kontaktai .contact .contact_row p {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 15px;
+    color: #412b15;
+}
+
+#kontaktai .contact .contact_row:nth-child(2) {
+    top:40px;
+}
+
+#kontaktai .contact .contact_row:nth-child(3) {
+    top:80px;
+}
+
+#kontaktu_forma {
+    padding: 70px 0;
+    background-color: #000;
+}
+
+#kontaktu_forma h2 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #b79b82;
+    margin-bottom: 40px;
+}
+
+.forma label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #f3cb9f;
+    font-weight: 300;
+}
+
+.forma input {
+    width: 95%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-family: 'Open Sans';
+}
+
+.forma textarea {
+    width: 100%;
+    height: 199px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-family: 'Open Sans';
+}
+
+.forma input[type='submit'] {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    font-family: 'Myriad Pro';
+    font-size: 17px;
+    background-color: #000;
+    color: #f4d1ab;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.forma img {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 18px;
+    margin-top: 7px;
+}
+
+/** IMG OPEN WINDOWS **/
+/*
+#open_img {
+    position: fixed;
+    top:0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+}
+
+#open_img .full_img {
+    width:1073px;
+    height:682px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #4f3a25;
+    position: relative;
+}
+
+#open_img .full_img img {
+    width:1053px;
+    height:662px;
+    margin-top: 10px;
+} 
+*/
+
+/** FOOTERIS **/
+#footer {
+    height: 320px;
+    width: 100%;
+}
+
+#footer .bottom_img {
+    background: url(images/footer_img.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 370px;
+    z-index: 99;
+    position: relative;
+}
+
+footer {
+    background: url(images/Rectangle-2.png);    
+    background-position: center;
+    background-size: cover;
+    height: 144px;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 65px
+}
+
+footer ul li {
+    display: inline-block;
+    position: relative;
+}
+
+footer ul li a {
+    font-family: TrajanProRegular;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 46px;
+    -webkit-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+footer ul li:nth-child(6) a {
+    margin-right: 0px;
+}
+
+footer ul li a:hover {
+    color: #dedede;
+    text-decoration: none;
+}
+
+footer ul li .active_bottom {
+    color: #fff;
+}
+
+footer ul li a.active_bottom::before {
+    content: '';
+    display:block;
+    width: 17px;
+    height: 46px;
+    position: absolute;
+    bottom: -5px;
+    left: -25px;
+    background-repeat: no-repeat;
+    background: url(images/Treble_Clef.png);
+}
+
+footer .social-media {
+    list-style: none;
+    position: absolute;
+    width: 70px;
+    bottom: -40px;
+    right: 35px;
+}
+
+footer .social-media li {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.diskografija_box section {
+    display: block;
+/*
+    width: 100%;
+    height: 100%;
+*/
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.diskografija_box section .open_box_cd,
+.outsideS .open_box_cd {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #4d3723;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.diskografija_box section .inside_box_cd,
+.outsideS .inside_box_cd {
+    display: block;
+    width: 98%;
+    height: 580px;
+    margin: 10px 0 0 12px;
+    background-color: #1f1106;
+}
+
+.dvd_box section {
+    display: block;
+/*
+    width: 100%;
+    height: 100%;
+*/
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.dvd_box section .open_box_cd,
+.outsideS .open_box_cd{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #4d3723;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.dvd_box section .inside_box_cd {
+    display: block;
+    width: 98%;
+    height: 580px;
+    margin: 10px 0 0 12px;
+    background-color: #1f1106;
+}
+
+#open_cd {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 9999;
+}
+
+#open_cd .open_box_cd {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #4d3723;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#open_cd .inside_box_cd {
+    display: block;
+    width: 98%;
+    height: 580px;
+    margin: 10px 0 0 12px;
+    background-color: #1f1106;
+}
+
+.inside_box_cd h2 {
+    font-family: TrajanProRegular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f4faf9;
+    line-height: 24px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.inside_box_cd .open_cd_img {
+    width: 100%;
+    height: 460px;
+    margin-left: 15px;
+}
+
+.dvd_box .inside_box_cd .open_cd_img {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.onlyDVD .inside_box_cd .open_cd_img {
+    height: 520px;
+}
+
+
+.open_box_cd ul {
+    color: #f4faf9;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    list-style-type: decimal;
+    padding-left: 40px;
+    width: 90%;
+}
+
+.open_box_cd ul h2 {
+    color: #e9be60 !important;
+    padding-left: 0px;
+}
+
+.open_box_cd ul li {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.open_box_cd ul li span {
+    float: right;
+}
+
+.close_btn {
+    position: absolute;
+    top:-15px;
+    right: -15px;
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+.close_btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#theFixed {
+    position:fixed; 
+    bottom:0; 
+    z-index:999;
+}
+
+.navbarOnScroll {
+    background-color: #4f3a25 !important;
+    -webkit-transition: background-color .8s;
+    transition: background-color .8s;
+}
+
+.bottom-navbar .navbar-nav > li > a.active_bottom.no-after::before {
+    display: none;
+}
+
+.events {
+    margin-left: 20%;
+    text-transform: uppercase;
+}
+
+.cds,
+.datess {
+    margin-left: 20%;
+}
+
+.cd-aprasymas p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fffafc;
+}
+
+footer ul li a:hover {
+    color: #e9be60;
+}
+
+.message-send {
+/*    display: none;*/
+    background-color: rgba(233, 190, 96, 0.6);
+    color: #555;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.message-sended {
+    width: 40%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0px 0px 43.61px 5.39px rgba(0, 0, 0, 0.16);
+    border: none;
+    position: relative;
+    padding-top: 35px;
+}
+
+.message-sended h3 {
+    position: relative;
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+    padding-top: 55px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.message-sended i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#muza {
+    position: absolute;
+    bottom: 80px;
+}
+
+
+.down_button img {
+	height: 21px;
+	width: 22px;
+}
+
+.down_button:hover,
+.down_button:active {
+	text-decoration: none;
+	color: #dcad52;
+}
+
+.down_button {
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+	display: none;
+	color: #ddd;
+	font-size: 12px;
+	width: 96%;
+	text-decoration: none;
+	margin: 0 auto;
+	z-index:999;
+	left: 5px;
+	padding-top: 5px;
+	background-color: rgba(79, 58, 37, 0.6);
+}
+
+.diskografija_box section {
+	height: 100vh !important;
+}
+
+.mfp-container.mfp-s-ready.mfp-image-holder {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.archyvas-data2.datess {
+    margin-top: 20px;
+}
+
+.outsideS {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999999999 !important;
+}
+
+.inside_box_cd p {
+	padding-left: 10px;
+}
+
+.klaidaFormoje {
+    border: 2px solid red !important;
+}
+
+.archyvas-informacija p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fffafc;
+    display: inline-block;
+}

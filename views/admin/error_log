@@ -1,0 +1,15 @@
+[24-Nov-2016 14:41:36 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/mgstudio/muza.mgstudio.lt/classes/config/Models/DiskografijaKoncertai.php on line 9
+[24-Nov-2016 14:42:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/mgstudio/muza.mgstudio.lt/classes/config/Models/DiskografijaKoncertai.php on line 9
+[24-Nov-2016 14:42:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/mgstudio/muza.mgstudio.lt/classes/config/Models/DiskografijaKoncertai.php on line 9
+[24-Nov-2016 14:42:53 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/mgstudio/muza.mgstudio.lt/classes/config/Models/DiskografijaKoncertai.php on line 9
+[24-Nov-2016 14:47:17 UTC] PHP Fatal error:  Undefined class constant 'all' in /home/mgstudio/muza.mgstudio.lt/views/admin/diskografija.php on line 394
+[24-Nov-2016 14:47:38 UTC] PHP Fatal error:  Undefined class constant 'all' in /home/mgstudio/muza.mgstudio.lt/views/admin/diskografija.php on line 394
+[24-Nov-2016 15:41:23 UTC] PHP Fatal error:  Class 'EventsText' not found in /home/mgstudio/muza.mgstudio.lt/views/admin/events.php on line 219
+[24-Nov-2016 15:41:55 UTC] PHP Fatal error:  Class 'EventsText' not found in /home/mgstudio/muza.mgstudio.lt/views/admin/events.php on line 219
+[24-Nov-2016 15:41:56 UTC] PHP Fatal error:  Class 'EventsText' not found in /home/mgstudio/muza.mgstudio.lt/views/admin/events.php on line 219
+[24-Nov-2016 16:51:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/mgstudio/muza.mgstudio.lt/views/admin/profilis.php on line 326
+[24-Nov-2016 21:53:38 UTC] PHP Fatal error:  Call to a member function save() on null in /home/mgstudio/muza.mgstudio.lt/views/admin/profilis.php on line 73
+[27-Dec-2016 14:51:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mgstudio/muza.mgstudio.lt/views/admin/galerija.php on line 25
+[27-Dec-2016 14:51:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mgstudio/muza.mgstudio.lt/views/admin/galerija.php on line 25
+[27-Dec-2016 14:51:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mgstudio/muza.mgstudio.lt/views/admin/galerija.php on line 25
+[27-Dec-2016 14:51:49 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mgstudio/muza.mgstudio.lt/views/admin/galerija.php on line 25

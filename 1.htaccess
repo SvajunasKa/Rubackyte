@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?muza.fr.sekvoja.serveriai.lt$
+RewriteCond %{REQUEST_URI} !^/views/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /views/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?muza.fr.sekvoja.serveriai.lt$
+RewriteRule ^(/)?$ views/index.php [L] 
