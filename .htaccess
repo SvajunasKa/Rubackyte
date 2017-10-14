@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(www.)?localhost$
+RewriteCond %{HTTP_HOST} ^rubackyte.dev$
 RewriteCond %{REQUEST_URI} !^/views/
 
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -7,5 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ /views/$1
 
-RewriteCond %{HTTP_HOST} ^(www.)localhost$
-RewriteRule ^(/)?$ views/index.php [L] 
+RewriteCond %{HTTP_HOST} ^rubackyte.dev$
+RewriteRule ^(/)?$ views/index.php [L]
+
+

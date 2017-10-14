@@ -5,7 +5,7 @@
 }
 
     .bottom-navbar .navbar-nav > li > a {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     #main_about {
@@ -90,7 +90,7 @@
     }
     
     .bottom-navbar .navbar-nav > li > a {
-        font-size: 11px;
+        font-size: 10px;
     }
     
     .bottom-navbar .navbar-nav {
@@ -221,7 +221,7 @@
 
 @media only screen and (max-width: 800px) {
     .bottom-navbar .navbar-nav > li > a {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 

@@ -492,7 +492,7 @@
 .diskografija_box:nth-child(37),
 .diskografija_box:nth-child(38),
 .diskografija_box:nth-child(39),
-.diskografija_box:nth-child(40), {
+.diskografija_box:nth-child(40) {
     margin-top: 50px;
 }
 

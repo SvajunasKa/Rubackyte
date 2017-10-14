@@ -16,6 +16,7 @@
         $meniu->archyvasLt = $_POST['archyvasLt'];
         $meniu->galerijaLt = $_POST['galerijaLt'];
         $meniu->kontaktaiLt = $_POST['kontaktaiLt'];
+        $meniu->mediaLt = $_POST['mediaLt'];
         if($meniu->save()) {
             $session->message(1);
             redirect('meniu.php');
@@ -30,6 +31,7 @@
         $meniu->archyvasEn = $_POST['archyvasEn'];
         $meniu->galerijaEn = $_POST['galerijaEn'];
         $meniu->kontaktaiEn = $_POST['kontaktaiEn'];
+        $meniu->mediaEn = $_POST['mediaEn'];
         if($meniu->save()) {
             $session->message(2);
             redirect('meniu.php');
@@ -44,6 +46,7 @@
         $meniu->archyvasFr = $_POST['archyvasFr'];
         $meniu->galerijaFr = $_POST['galerijaFr'];
         $meniu->kontaktaiFr = $_POST['kontaktaiFr'];
+        $meniu->mediaFr = $_POST['mediaFr'];
         if($meniu->save()) {
             $session->message(3);
             redirect('meniu.php');
@@ -124,6 +127,8 @@
                             <li><a href="kontaktai.php"> Kontaktai</a></li>
                             <li><a href="koncertu_grafikas.php"> Koncertų grafikas</a></li>
                             <li><a href="events.php"> Save The Date</a></li>
+                            <li><a href="mediaSubPage1.php"> mediaSubPage1</a></li>
+                            <li><a href="mediaSubPage2.php"> mediaSubPage2</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -252,6 +257,11 @@
                                                 <input class="form-control calendar" name="kontaktaiLt" value="<?php echo $meniu->kontaktaiLt; ?>">
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
+                                            </div>
+                                        </div>
                                         <input type="submit" name="lietuviskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
@@ -292,6 +302,11 @@
                                                 <input class="form-control calendar" name="kontaktaiEn" value="<?php echo $meniu->kontaktaiEn; ?>">
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="mediaEn" value="<?php echo $meniu->mediaEn; ?>">
+                                            </div>
+                                        </div>
                                         <input type="submit" name="angliskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
@@ -330,6 +345,11 @@
                                         <div class="form-group">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="kontaktaiFr" value="<?php echo $meniu->kontaktaiFr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="mediaFr" value="<?php echo $meniu->mediaFr; ?>">
                                             </div>
                                         </div>
                                         <input type="submit" name="prancuziskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
