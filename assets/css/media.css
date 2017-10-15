@@ -221,7 +221,7 @@
 
 @media only screen and (max-width: 800px) {
     .bottom-navbar .navbar-nav > li > a {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 

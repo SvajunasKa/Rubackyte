@@ -47,4 +47,16 @@ $(document).ready(function() {
         },
         type: 'image'
     });
+    $(window).load(function () {
+        $(".submenu").hide();
+    });
+    $(".media").hover( function () {
+        $(".submenu").show();
+    });
+    $(".subNav").mouseleave(function (e) {
+        console.log("AAA");
+        e.preventDefault();
+        e.stopPropagation();
+        $(".submenu").hide();
+    })
 });

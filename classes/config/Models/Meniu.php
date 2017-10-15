@@ -6,7 +6,9 @@
             'archyvasLt', 'galerijaLt', 'kontaktaiLt' , 'biografijaEn',
             'diskografijaEn', 'grafikasEn', 'archyvasEn', 'galerijaEn',
             'kontaktaiEn', 'biografijaFr', 'diskografijaFr', 'grafikasFr',
-            'archyvasFr', 'galerijaFr', 'kontaktaiFr', 'mediaLt', 'mediaEn', 'mediaFr');
+            'archyvasFr', 'galerijaFr', 'kontaktaiFr', 'mediaLt', 'mediaEn', 'mediaFr',
+            'subMenu1Lt', 'subMenu1En', 'subMenu1Fr', 'subMenu2Lt', 'subMenu2En', 'subMenu2Fr',
+            'subMenu3Lt', 'subMenu3En','subMenu3Fr');
         public $id;
         public $biografijaLt;
         public $diskografijaLt;
@@ -29,6 +31,16 @@
         public $mediaLt;
         public $mediaEn;
         public $mediaFr;
+        public $subMenu1Lt;
+        public $subMenu1En;
+        public $subMenu1Fr;
+        public $subMenu2Lt;
+        public $subMenu2En;
+        public $subMenu2Fr;
+        public $subMenu3Lt;
+        public $subMenu3En;
+        public $subMenu3Fr;
+
     }
 
 ?>

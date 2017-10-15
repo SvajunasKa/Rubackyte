@@ -79,6 +79,9 @@
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaLt; ?></a></li>
+                        <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></li>
+                        <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></li>
+                        <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></li>
 
                     </ul>
                     <?php } ?>
@@ -91,6 +94,9 @@
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaEn; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1En; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2En; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3En; ?></a></li>
 
                     </ul>
                     <?php } ?>
@@ -103,6 +109,9 @@
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaiFr; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Fr; ?></a></li>
 
                     </ul>
                     <?php } ?>

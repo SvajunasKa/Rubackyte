@@ -77,8 +77,14 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></li>
+                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaLt; ?></a>
+                            <ul class="subNav nav-bar">
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></li>
+                            </ul>
+                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaLt; ?></a></li>
 
                     </ul>
                     <?php } ?>
@@ -89,8 +95,14 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaEn; ?></a></li>
+                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaEn; ?></a>
+                            <ul class="subNav nav-bar">
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1En; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2En; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3En; ?></a></li>
+                            </ul>
+                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiEn; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaEn; ?></a></li>
 
                     </ul>
                     <?php } ?>
@@ -101,8 +113,14 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaFr; ?></a></li>
+                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaFr; ?></a>
+                            <ul class="subNav nav-bar">
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></li>
+                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Fr; ?></a></li>
+                            </ul>
+                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiFr; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaiFr; ?></a></li>
 
                     </ul>
                     <?php } ?>

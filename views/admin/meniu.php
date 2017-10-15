@@ -17,6 +17,9 @@
         $meniu->galerijaLt = $_POST['galerijaLt'];
         $meniu->kontaktaiLt = $_POST['kontaktaiLt'];
         $meniu->mediaLt = $_POST['mediaLt'];
+        $meniu->subMenu1Lt = $_POST['subMenu1Lt'];
+        $meniu->subMenu2Lt = $_POST['subMenu2Lt'];
+        $meniu->subMenu3Lt = $_POST['subMenu3Lt'];
         if($meniu->save()) {
             $session->message(1);
             redirect('meniu.php');
@@ -32,6 +35,10 @@
         $meniu->galerijaEn = $_POST['galerijaEn'];
         $meniu->kontaktaiEn = $_POST['kontaktaiEn'];
         $meniu->mediaEn = $_POST['mediaEn'];
+        $meniu->subMenu1En = $_POST['subMenu1En'];
+        $meniu->subMenu2En = $_POST['subMenu2En'];
+        $meniu->subMenu3En = $_POST['subMenu3En'];
+
         if($meniu->save()) {
             $session->message(2);
             redirect('meniu.php');
@@ -47,6 +54,9 @@
         $meniu->galerijaFr = $_POST['galerijaFr'];
         $meniu->kontaktaiFr = $_POST['kontaktaiFr'];
         $meniu->mediaFr = $_POST['mediaFr'];
+        $meniu->subMenu1Fr = $_POST['subMenu1Fr'];
+        $meniu->subMenu2Fr = $_POST['subMenu2Fr'];
+        $meniu->subMenu3Fr = $_POST['subMenu3Fr'];
         if($meniu->save()) {
             $session->message(3);
             redirect('meniu.php');
@@ -262,6 +272,26 @@
                                                 <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu1Lt" value="<?php echo $meniu->subMenu1Lt; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu2Lt" value="<?php echo $meniu->subMenu2Lt; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu3Lt" value="<?php echo $meniu->subMenu3Lt; ?>">
+                                            </div>
+                                        </div>
                                         <input type="submit" name="lietuviskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
@@ -307,6 +337,21 @@
                                                 <input class="form-control calendar" name="mediaEn" value="<?php echo $meniu->mediaEn; ?>">
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu1En" value="<?php echo $meniu->subMenu1En; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu2En" value="<?php echo $meniu->subMenu2En; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu3En" value="<?php echo $meniu->subMenu3En; ?>">
+                                            </div>
+                                        </div>
                                         <input type="submit" name="angliskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
@@ -350,6 +395,21 @@
                                         <div class="form-group">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="mediaFr" value="<?php echo $meniu->mediaFr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu1Fr" value="<?php echo $meniu->subMenu1Fr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu2Fr" value="<?php echo $meniu->subMenu2Fr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu3Fr" value="<?php echo $meniu->subMenu3Fr; ?>">
                                             </div>
                                         </div>
                                         <input type="submit" name="prancuziskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
