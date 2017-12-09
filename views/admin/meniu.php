@@ -137,8 +137,7 @@
                             <li><a href="kontaktai.php"> Kontaktai</a></li>
                             <li><a href="koncertu_grafikas.php"> Koncertų grafikas</a></li>
                             <li><a href="events.php"> Save The Date</a></li>
-                            <li><a href="mediaSubPage1.php"> mediaSubPage1</a></li>
-                            <li><a href="mediaSubPage2.php"> mediaSubPage2</a></li>
+                            <li><a href="audio.php"> Audio</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -272,11 +271,7 @@
                                                 <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-10">
-                                                <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
-                                            </div>
-                                        </div>
+
                                         <div class="form-group">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu1Lt" value="<?php echo $meniu->subMenu1Lt; ?>">

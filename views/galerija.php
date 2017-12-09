@@ -5,11 +5,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 galerija-on-mobile">
+                   <!-- <?php /*if($_SESSION['lang'] == 'lt' ) { echo "<p class='title'>Nuotraukas galima publęėėįuoti</p>";} */?>
+                    <?php /*if($_SESSION['lang'] == 'en' ) { echo "<p class='title'>Pictures free to publish</p>"; } */?>
+                    --><?php /*if($_SESSION['lang'] == 'fr' ) { echo "<p class='title'>Free to Après french lng</p>"; } */?>
                     <?php foreach($nuotraukos as $nuotrauka) { ?>
                     <div class="img_background">
                         <a class="test-popup-link" href="assets/images/<?php echo $nuotrauka->nuotrauka ?>">
                             <div class="img_info">
                                 <p class="title_info"><?php echo $nuotrauka->pavadinimas; ?></p>
+
                                 <?php if($_SESSION['lang'] == 'lt' ) { ?>
                                 <p class="description_info"><?php echo $nuotrauka->aprasymas; ?></p>
                                 <?php } ?>
@@ -19,10 +23,12 @@
                                 <?php if($_SESSION['lang'] == 'fr' ) { ?>
                                 <p class="description_info"><?php echo $nuotrauka->aprasymasFr; ?></p>
                                 <?php } ?>
-                                
+
                             </div>
                             <div class="small-img" style="background: url('assets/images/<?php echo $nuotrauka->nuotrauka ?>') no-repeat; background-size: cover; background-position: center top"></div>
+                            <p class="author-info"><?php echo $nuotrauka->autorius; ?></p>
                         </a>
+
                         <a class="down_button" href="assets/images/<?php echo $nuotrauka->nuotrauka ?>" download ><img src="assets/images/download-BTN.png" alt=""><br>
                         <?php if($_SESSION['lang'] == 'lt' ) { echo $web->nuotrauka_lt; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo $web->nuotrauka_en; } ?>

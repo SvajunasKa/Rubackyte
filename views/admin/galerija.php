@@ -14,6 +14,7 @@
         $galerija->aprasymas = $_POST['aprasymas'];
         $galerija->aprasymasEn = $_POST['aprasymasEn'];
         $galerija->aprasymasFr = $_POST['aprasymasFr'];
+        $galerija->autorius = $_POST['autorius'];
         $galerija->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
         if($galerija->save()) {
             $session->message(1);
@@ -27,6 +28,7 @@
         $galerija->aprasymas = $_POST['aprasymas'];
         $galerija->aprasymasEn = $_POST['aprasymasEn'];
         $galerija->aprasymasFr = $_POST['aprasymasFr'];
+        $galerija->autorius = $_POST['autorius'];
         if($galerija->save()) {
             $session->message(1);
             redirect('galerija.php');
@@ -218,6 +220,11 @@
                         <textarea name="aprasymasFr" class="form-control" id="g-desk" cols="30" rows="3"><?php echo $finds->aprasymasFr; ?></textarea>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="g-title">Nuotraukos autorius</label>
+                    <input type="text" class="form-control" name="autorius" id="g-title" placeholder=" " value="<?php echo $finds->autorius; ?>">
+                </div>
+
 
                 <button type="submit" name="galerija2_submit" class="btn btn-info">Išsaugoti</button>
                 
@@ -301,6 +308,11 @@
                                     <textarea name="aprasymasFr" class="form-control" id="g-desk" cols="30" rows="3"></textarea>
                                 </div>
                             </div>
+                             <div class="form-group">
+                                 <label for="g-title">Nuotraukos autorius</label>
+                                 <input type="text" class="form-control" name="autorius" id="g-title" placeholder=" ">
+                             </div>
+
 
                             <button type="submit" name="galerija_submit" class="btn btn-info">Įkelti nuotrauką</button>
                         </form>

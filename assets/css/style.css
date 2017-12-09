@@ -298,6 +298,9 @@
     color: #fffafc;
     display: inline-block;
 }
+.archyvas-informacija a{
+    color: #e9be60;
+}
 
 .archyvas-data2 {
     width: 100%;
@@ -385,6 +388,15 @@
     margin-top: 80px;
 }
 
+.author-info {
+    margin-top: 5px;
+    text-align: right;
+}
+.title{
+    text-align: left;
+    color: #b79b82;
+}
+
 #galerija .img_background .img_info p.description_info {
     font-size: 14px;
     font-weight: 400;
@@ -459,11 +471,15 @@
     text-align: center;
     display: inline-block;
     width: 229px;
-    height: 229px;
-    background-color: #4d3922;
+    /*height: 229px;*/
+    /*background-color: #4d3922;*/
     margin-right: 64px;
     position: relative;
     margin-top: 10px;
+}
+
+.diskografija_box p {
+    color: white;
 }
 
 .disk-small-img {
@@ -540,7 +556,9 @@
 }
 
 .diskografija_box:hover .img_info {
+    /*
     opacity: 1;
+    */
 }
 
 .diskografija_box .img_info p.title_info {
@@ -550,7 +568,8 @@
     font-style: italic;
     color: rgba(255, 255, 255, 1);
     text-align: center;
-    margin-top: 80px;
+    position: absolute;
+    margin-top: 100px;
 }
 
 .diskografija_box .img_info p.description_info {
@@ -643,7 +662,7 @@
 /** KONTAKTAI - PAGE **/
 #kontaktai {
     padding: 70px 0;
-    height: 380px;
+    /*height: 450px;*/
     background-color: #ffffff;
 }
 
@@ -666,14 +685,14 @@
 #kontaktai .contact {
     width: 100%;
     height: auto;
-    position: relative;
+    /*position: relative;*/
 }
 
 #kontaktai .contact .contact_row {
     width: 100%;
-    position: absolute;
+   /* position: absolute;*/
     left: -20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #kontaktai .contact .contact_row img {
@@ -686,8 +705,9 @@
     font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 300;
-    line-height: 15px;
+    line-height: 20px;
     color: #412b15;
+    display: inline-block;
 }
 
 #kontaktai .contact .contact_row:nth-child(2) {
@@ -696,6 +716,15 @@
 
 #kontaktai .contact .contact_row:nth-child(3) {
     top: 80px;
+}
+#kontaktai .contact .contact_row:nth-child(4) {
+    top: 120px;
+}
+#kontaktai .contact .contact_row:nth-child(5) {
+    top: 160px;
+}
+#kontaktai .contact .contact_row:nth-child(6) {
+    top: 200px;
 }
 
 #kontaktu_forma {
@@ -1187,4 +1216,8 @@ footer ul li a:hover {
     font-weight: 400;
     color: #fffafc;
     display: inline-block;
+}
+.fa{
+    color: #eba342;
+    margin-right: 20px;
 }

@@ -312,11 +312,11 @@
     }
     
     .mobile-top-contacts {
-        margin-top: 160px;
+        margin-top: 50px;
     }
     
     #kontaktai {
-        height: 550px;
+        /*height: 680px;*/
     }
     
     .padding_on_mobile_contacts {
@@ -372,7 +372,7 @@
     .inside_box_cd .open_cd_img {
         width: 200px;
         height: 200px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     
     #open_cd > div > div > div > div > div > div > h2 {

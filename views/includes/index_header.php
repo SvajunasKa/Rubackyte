@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    
-    
+
+
 
     <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,14 +29,14 @@
 <body>
     <!--  HEADER SECTION  -->
     <section id="header">
-       
+
         <!--   TOP MENU   -->
         <nav class="navbar navbar-inverse mobile_top_menu">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand <?php if($_SESSION['lang'] == 'en') echo 'active_tops'; ?>" href="?lang=en">EN</a>
                     <a class="navbar-brand <?php if($_SESSION['lang'] == 'fr') echo 'active_tops'; ?>" href="?lang=fr">FR</a>
-                    <a class="navbar-brand <?php if($_SESSION['lang'] == 'lt' OR $_SESSION['lang'] == '') echo 'active_tops'; ?>" href="?lang=lt">LT</a>
+                    <a class="navbar-brand <?php if($_SESSION['lang'] == 'lt') echo 'active_tops'; ?>" href="?lang=lt">LT</a>
                 </div>
                 <div class="pull-right top_menu_mobile">
                     <ul class="nav navbar-nav">
@@ -49,8 +49,8 @@
                 <!--/.nav-collapse -->
             </div>
         </nav>
-        
-        <?php 
+
+        <?php
             $uri = $_SERVER['REQUEST_URI'];
             $kategorija = explode('/', $uri);
             $actual_link = 'http://'.$_SERVER['HTTP_HOST'].'/';
@@ -58,7 +58,7 @@
         <!--    BOTTOM MENU    -->
         <nav  class="bottom-navbar navbar navbar-inverse">
             <div class="container on_mobile_100">
-                
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -68,7 +68,7 @@
                     </button>
                 </div>
                 <?php $meniu = Meniu::find(1); ?>
-                
+
                 <div id="navbar" class="collapse navbar-collapse pull-center">
                     <?php if($_SESSION['lang'] == 'lt') { ?>
                     <ul class="nav navbar-nav">
@@ -77,13 +77,6 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasLt; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></li>
-                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaLt; ?></a>
-                            <ul class="subNav nav-bar">
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></li>
-                            </ul>
-                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></li>
 
                     </ul>
@@ -95,13 +88,6 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaEn; ?></a></li>
-                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaEn; ?></a>
-                            <ul class="subNav nav-bar">
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1En; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2En; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3En; ?></a></li>
-                            </ul>
-                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiEn; ?></a></li>
 
                     </ul>
@@ -113,13 +99,6 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaFr; ?></a></li>
-                        <li class="media"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> ><?php echo $meniu->mediaFr; ?></a>
-                            <ul class="subNav nav-bar">
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu1') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu2') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></li>
-                                <li class="submenu"><a <?php if(strpos($uri, 'subMenu3') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Fr; ?></a></li>
-                            </ul>
-                        </li>
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiFr; ?></a></li>
 
                     </ul>

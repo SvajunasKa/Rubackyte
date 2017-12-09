@@ -7,25 +7,30 @@
                 <div class="col-sm-12 diskografas-on-mobile">
                     <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>'.$web->cd_lt.'</h2>'; } ?>
                     <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>'.$web->cd_en.'</h2>'; } ?>
-                    <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>'.$web->cd_fr.'</h2>'; } ?> 
+                    <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>'.$web->cd_fr.'</h2>'; } ?>
                     <?php foreach($cdvinilas as $cd1) { ?>
+
+
                     <div class="diskografija_box">
+                        <?php if($_SESSION['lang'] == 'lt' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasLt.'</p>'; } ?>
+                        <?php if($_SESSION['lang'] == 'en' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasEn.'</p>'; } ?>
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasFr.'</p>'; } ?>
                         <div class="img_info">
                             <?php if($_SESSION['lang'] == 'lt' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasLt.'</p>'; } ?>
                             <?php if($_SESSION['lang'] == 'en' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasEn.'</p>'; } ?>
-                            <?php if($_SESSION['lang'] == 'fr' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasFr.'</p>'; } ?> 
+                            <?php if($_SESSION['lang'] == 'fr' ) { echo '<p class="title_info" data-id="'.$cd1->id.'">'.$cd1->pavadinimasFr.'</p>'; } ?>
                         </div>
                         <?php $nuotrauka = 'assets/images/'.$cd1->nuotrauka; ?>
                         <div class="disk-small-img" style='background: url("<?php echo $nuotrauka; ?>") no-repeat; background-size: cover; background-position: center'></div>
                         <!--   POPUP OPEN BOX   -->
-                        
+
                     </div>
                     <?php } ?>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <?php foreach($cdvinilas as $cd2) { ?>
         <section id="open_cd<?php echo $cd2->id; ?>" class="outsideS">
             <div class="container">
@@ -41,13 +46,6 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd2->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
-                                    <div class="col-sm-7">
-                                        <div class="row">
-                                            <?php if($_SESSION['lang'] == 'lt' ) { echo $cd2->aprasymasLt; } ?>
-                                            <?php if($_SESSION['lang'] == 'en' ) { echo $cd2->aprasymasEn; } ?>
-                                            <?php if($_SESSION['lang'] == 'fr' ) { echo $cd2->aprasymasFr; } ?>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -57,7 +55,7 @@
             </div>
         </section>
     <?php } ?>
-    
+
     <section id="dvd">
         <div class="container">
             <div class="row">
@@ -66,22 +64,22 @@
                     <div class="left-side">
                         <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>'.$web->dvd_lt.'</h2>'; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>'.$web->dvd_en.'</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>'.$web->dvd_fr.'</h2>'; } ?> 
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>'.$web->dvd_fr.'</h2>'; } ?>
                         <?php foreach($dvds as $dvd) { ?>
                         <div class="dvd_box">
                             <?php $nuotrauka_dvd = 'assets/images/'.$dvd->nuotrauka; ?>
                             <div class="dvd-small-img" data-id="<?php echo $dvd->id; ?>" style="background: url('<?php echo $nuotrauka_dvd; ?>') no-repeat; background-size: cover; background-position: center"></div>
-                            
+
                         </div>
                         <?php } ?>
                     </div>
                     <?php $youtube = DiskografijaKoncertai::all('ASC'); ?>
                     <div class="right-side">
-                        
+
                         <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>KONCERTINIAI ĮRAŠAI</h2>'; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?> 
-                        
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
+
                         <?php foreach($youtube as $you) { ?>
                         <div class="youtube-g">
                             <a href="#">
@@ -96,7 +94,7 @@
             </div>
         </div>
     </section>
-    
+
     <?php foreach($dvds as $dvd) { ?>
     <section id="open_cd_2<?php echo $dvd->id; ?>" class="outsideS onlyDVD">
         <div class="container">
@@ -128,13 +126,13 @@
         </div>
     </section>
     <?php } ?>
-   
+
     <?php require_once('includes/main_footer.php'); ?>
-    
+
     <script type="text/javascript">
 //        $(document).ready(function() {
 //            $('html, body').animate({
 //                scrollTop: $("#scrollHere").offset().top
-//            }, 1000); 
+//            }, 1000);
 //        });
     </script>

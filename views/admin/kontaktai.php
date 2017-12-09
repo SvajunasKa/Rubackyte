@@ -21,7 +21,7 @@
     }
 
     if(isset($_POST['europa_submit'])) {
-        $europa = Kontaktai::find(1);
+        $europa = kontaktai::find(1);
         $europa->asmuo_eu = $_POST['kontaktinis_asmuo_eu'];
         $europa->email_eu = $_POST['elpastas_eu'];
         $europa->telefonas_eu = $_POST['telefonas_eu'];
@@ -32,7 +32,7 @@
     }
 
     if(isset($_POST['jav_submit'])) {
-        $jav = Kontaktai::find(1);
+        $jav = kontaktai::find(1);
         $jav->asmuo_jav = $_POST['kontaktinis_asmuo_jav'];
         $jav->email_jav = $_POST['elpastas_jav'];
         $jav->telefonas_jav = $_POST['telefonas_jav'];
@@ -41,6 +41,16 @@
             redirect('kontaktai.php');
         }
     }
+if(isset($_POST['fr_submit'])) {
+    $fr = kontaktai::find(1);
+    $fr->asmuo_fr = $_POST['kontaktinis_asmuo_fr'];
+    $fr->email_fr = $_POST['elpastas_fr'];
+    $fr->telefonas_fr = $_POST['telefonas_fr'];
+    if($fr->save()) {
+        $session->message(4);
+        redirect('kontaktai.php');
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -197,10 +207,13 @@
                                 <a data-toggle="tab" href="#home">Email nustatymai</a>
                             </li>
                             <li class="">
-                                <a data-toggle="tab" href="#europa">Europos kontaktai</a>
+                                <a data-toggle="tab" href="#europa">Eu kontaktai</a>
                             </li>
                             <li class="">
                                 <a data-toggle="tab" href="#jav">Jav kontaktai</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#jav">Fr kontaktai</a>
                             </li>
                         </ul>
                     </header>
@@ -247,7 +260,7 @@
                                         Europos Kontaktai
                                     </header>
                                     <form class="form-horizontal tasi-form" method="post">
-                                        <?php $europa = Kontaktai::find(1); ?>
+                                        <?php $europa = kontaktai::find(1); ?>
                                         <div class="form-group">
                                             <label class="col-sm-2 col-sm-2 control-label">Kontaktinis asmuo</label>
                                             <div class="col-sm-10">
@@ -276,7 +289,7 @@
                                         Jav Kontaktai
                                     </header>
                                     <form class="form-horizontal tasi-form" method="post">
-                                        <?php $jav = Kontaktai::find(1); ?>
+                                        <?php $jav = kontaktai::find(1); ?>
                                         <div class="form-group">
                                             <label class="col-sm-2 col-sm-2 control-label">Kontaktinis asmuo</label>
                                             <div class="col-sm-10">
@@ -296,6 +309,35 @@
                                             </div>
                                         </div>
                                         <input type="submit" name="jav_submit" value="Išsaugoti" class="btn btn-md btn-success">
+                                    </form>
+                                </section>
+                            </div>
+                            <div id="jav" class="tab-pane">
+                                <section class="panel">
+                                    <header class="panel-heading head-border">
+                                        Fr Kontaktai
+                                    </header>
+                                    <form class="form-horizontal tasi-form" method="post">
+                                        <?php $fr = kontaktai::find(1); ?>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 col-sm-2 control-label">Kontaktinis asmuo</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="kontaktinis_asmuo_fr" value="<?php echo $fr->asmuo_fr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 col-sm-2 control-label">El.paštas</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="elpastas_fr" value="<?php echo $fr->email_fr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 col-sm-2 control-label">Telefono numeris</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="telefonas_fr" value="<?php echo $fr->telefonas_fr; ?>">
+                                            </div>
+                                        </div>
+                                        <input type="submit" name="fr_submit" value="Išsaugoti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
                             </div>
