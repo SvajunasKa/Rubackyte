@@ -44,7 +44,10 @@
     margin: 0;
     padding: 0;
 }
-
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
 /** HEADER SECTION **/
 #header {
     background: url(images/MergedLayers.png);
@@ -81,15 +84,15 @@
     font-size: 17px;
     color: #d8af58;
     line-height: 24px;
-    padding-left: 5px;
+    //padding-left: 5px;
 }
 
-#header > nav:nth-child(1) > div > div.navbar-header > a {
+#header > nav:nth-child(1) > .menu-item > div.navbar-header > a {
     -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
 }
 
-#header > nav:nth-child(1) > div > div.navbar-header > a:hover {
+#header > nav:nth-child(1) > .menu-item > div.navbar-header > a:hover {
     color: #e9be60;
 }
 
@@ -116,9 +119,13 @@
 .bottom-navbar .container,
 .bottom-navbar .navbar-collapse {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    line-height: 70px;
 }
 
-.bottom-navbar .navbar-nav > li > a {
+.bottom-navbar .navbar-nav > .menu-item, .drop-menu > a {
     font-family: TrajanProRegular;
     font-weight: 400;
     font-size: 17px;
@@ -133,14 +140,26 @@
     color: #e9be60 !important;
 }
 
-.bottom-navbar .navbar-nav > li > a:hover {
+.bottom-navbar .navbar-nav > .menu-item > a:hover {
     color: #e9be60;
 }
 
-.bottom-navbar .navbar-nav > li {
+.bottom-navbar .navbar-nav > .menu-item {
     padding-right: 5px;
-    margin-top: 3px;
+    padding-left: 5px;
     cursor: pointer;
+    display: inline-block;
+}
+.drop-menu {
+    position: relative;
+    display: inline-block
+}
+.drop-menu .drop-list {
+      display: none;
+      position: absolute;
+  }
+.drop-menu:hover .drop-list {
+    display: block;
 }
 
 .media {
