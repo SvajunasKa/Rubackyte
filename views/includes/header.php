@@ -24,7 +24,7 @@
 
         gtag('config', 'UA-108550676-1');
     </script>
-    
+
 
     <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +37,7 @@
 <body>
     <!--  HEADER SECTION  -->
     <section id="header">
-       
+
         <!--   TOP MENU   -->
         <nav class="navbar navbar-inverse mobile_top_menu">
             <div class="container">
@@ -57,8 +57,8 @@
                 <!--/.nav-collapse -->
             </div>
         </nav>
-        
-        <?php 
+
+        <?php
             $uri = $_SERVER['REQUEST_URI'];
             $kategorija = explode('/', $uri);
             $actual_link = 'http://'.$_SERVER['HTTP_HOST'].'/';
@@ -66,7 +66,7 @@
         <!--    BOTTOM MENU    -->
         <nav  class="bottom-navbar navbar navbar-inverse">
             <div class="container on_mobile_100">
-                
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -76,18 +76,26 @@
                     </button>
                 </div>
                 <?php $meniu = Meniu::find(1); ?>
-                
+
                 <div id="navbar" class="collapse navbar-collapse pull-center">
                     <?php if($_SESSION['lang'] == 'lt') { ?>
-                    <ul class="nav navbar-nav">
-                        <li><a <?php if(strpos($uri, 'biografija') !== false) { echo 'class="active_bottom"'; } ?> href="biografija.php#muza"><?php echo $meniu->biografijaLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'diskografija') !== false) { echo 'class="active_bottom"'; } ?> href="diskografija.php#muza"><?php echo $meniu->diskografijaLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></li>
-                        <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></li>
+                    <div class="nav navbar-nav">
+                        <div class="menu-item"><a <?php if(strpos($uri, 'biografija') !== false) { echo 'class="active_bottom"'; } ?> href="biografija.php#muza"><?php echo $meniu->biografijaLt; ?></a></div>
+                        <div class="menu-item"><a <?php if(strpos($uri, 'diskografija') !== false) { echo 'class="active_bottom"'; } ?> href="diskografija.php#muza"><?php echo $meniu->diskografijaLt; ?></a></div>
+                        <div class="menu-item"><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasLt; ?></a></div>
+                        <div class="menu-item"><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasLt; ?></a></div>
+                        <div class="menu-item"><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></div>
+                        <div class="menu-item1"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="#"><?php echo $meniu->mediaLt; ?></a>
+                            <div class="show-menu">
+                                 <div class="drop-list"> <a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></div>
+                                <div class="drop-list"> <a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></div>
+                                <div class="drop-list"> <a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></div>
+                            </div>
+                        </div>
 
-                    </ul>
+
+                        <div class="menu-item"><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></div>
+                    </div>
                     <?php } ?>
                     <?php if($_SESSION['lang'] == 'en') { ?>
                     <ul class="nav navbar-nav">
@@ -96,6 +104,8 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasEn; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaEn; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaEn; ?></a></li>
+
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiEn; ?></a></li>
 
                     </ul>
@@ -107,6 +117,8 @@
                         <li><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasFr; ?></a></li>
                         <li><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaFr; ?></a></li>
+                        <li><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->mediaFr; ?></a></li>
+
                         <li><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiFr; ?></a></li>
 
                     </ul>

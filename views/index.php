@@ -1,4 +1,4 @@
-<?php require_once('includes/index_header.php'); ?>
+<?php require_once('includes/header.php'); ?>
     <?php $biografija = Biografija::find(1); ?>
     <section id="main_about">
         <div class="container">
