@@ -92,6 +92,8 @@
                                 <div class="drop-list"> <a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></div>
                             </div>
                         </div>
+
+
                         <div class="menu-item"><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></div>
                     </div>
                     <?php } ?>
