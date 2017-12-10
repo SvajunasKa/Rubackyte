@@ -47,16 +47,8 @@ $(document).ready(function() {
         },
         type: 'image'
     });
-    $(window).load(function () {
-        $(".submenu").hide();
-    });
-    $(".media").hover( function () {
-        $(".submenu").show();
-    });
-    $(".subNav").mouseleave(function (e) {
-        console.log("AAA");
+    $('.menu-item1').click(function (e) {
         e.preventDefault();
-        e.stopPropagation();
-        $(".submenu").hide();
-    })
+        $(".show-menu").toggle();
+    });
 });

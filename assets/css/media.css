@@ -220,7 +220,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .bottom-navbar .navbar-nav > .menu-item > a {
+    .bottom-navbar .navbar-nav > .menu-item, .menu-item1, .drop-list > a {
         font-size: 10px;
     }
 }
@@ -229,6 +229,17 @@
 @media only screen and (max-width: 767px) {
     #header {
         min-height: 500px;
+    }
+    .navbar-nav{
+        display: block;
+        height:auto;
+    }
+    .menu-item, .menu-item1{
+        width: 100%;
+        text-align: center;
+    }
+    .show-menu{
+        position: unset !important;
     }
     
     .top_menu_mobile {
@@ -536,6 +547,7 @@
         height: 35px;
         
     }
+
     
     .bottom-navbar .navbar-toggle {
         margin-top: 7px;
