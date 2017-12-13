@@ -94,40 +94,7 @@
             </div>
             <!--responsive view logo end-->
 
-            <div class="sidebar-left-info">
-                <!-- visible small devices start-->
-                <!-- visible small devices end-->
-
-                <!--sidebar nav start-->
-                <ul class="nav nav-pills nav-stacked side-navigation">
-<!--                    nav-active-->
-                    <li>
-                        <h3 class="navigation-title">Navigacija</h3>
-                    </li>
-                    <li class="menu-list">
-                        <a href="index.html"><i class="fa fa-filter"></i> <span>Nustatymai</span></a>
-                        <ul class="child-list">
-                            <li><a href="profilis.php"> Profilio</a></li>
-                            <li><a href="meniu.php"> Meniu</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="navigation-title">PUSLAPIAI</h3>
-                    </li>
-                    <li class="menu-list nav-active"><a href="#"><i class="fa fa-file"></i> <span>Puslapiai </span></a>
-                        <ul class="child-list">
-                            <li><a href="biografija.php"> Biografija</a></li>
-                            <li><a href="diskografija.php"> Diskografija</a></li>
-                            <li><a href="grafikas.php"> Repertuarai</a></li>
-                            <li><a href="galerija.php"> Galerija</a></li>
-                            <li><a href="kontaktai.php"> Kontaktai</a></li>
-                            <li class="active"><a href="koncertu_grafikas.php"> Koncertų grafikas</a></li>
-                            <li><a href="events.php"> Save The Date</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
+            <?php require_once('admin-menu.php'); ?>
         </div>
         <!-- sidebar left end-->
 

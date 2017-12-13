@@ -47,8 +47,8 @@ $(document).ready(function() {
         },
         type: 'image'
     });
-    $('.menu-item1').click(function (e) {
-        e.preventDefault();
+    $('.menu-item1').hover(function () {
+        //e.preventDefault();
         $(".show-menu").toggle();
     });
 });

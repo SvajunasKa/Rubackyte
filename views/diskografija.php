@@ -73,23 +73,6 @@
                         </div>
                         <?php } ?>
                     </div>
-                    <?php $youtube = DiskografijaKoncertai::all('ASC'); ?>
-                    <div class="right-side">
-
-                        <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>KONCERTINIAI ĮRAŠAI</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
-
-                        <?php foreach($youtube as $you) { ?>
-                        <div class="youtube-g">
-                            <a href="#">
-                                <iframe src="<?php echo $you->koncertas; ?>" frameborder="0" width="500" height="280" target="_blank"></iframe>
-                            </a>
-                            <p><?php echo $you->pavadinimas; ?></p>
-                        </div>
-                        <?php } ?>
-
-                    </div>
                 </div>
             </div>
         </div>

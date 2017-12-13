@@ -367,7 +367,7 @@ h1,h2,h3,h4,h5 {
 
 .side-navigation .child-list {
     list-style: none;
-    display: none;
+   /* display: none;*/
     margin:0;
     padding: 0 0 1px 0;
 }

@@ -8,7 +8,7 @@
 
    jQuery('.menu-list > a').click(function() {
       
-      var parent = jQuery(this).parent();
+     /* var parent = jQuery(this).parent();
       var sub = parent.find('> ul');
       
       if(!jQuery('body').hasClass('sidebar-collapsed')) {
@@ -26,7 +26,7 @@
             });
          }
       }
-      return false;
+      return false;*/
    });
 
    function visibleSubMenuClose() {
