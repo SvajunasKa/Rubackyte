@@ -4,7 +4,7 @@
     margin-left: 155px;
 }
 
-    .bottom-navbar .navbar-nav > .menu-item > a {
+    .bottom-navbar .navbar-nav > .menu-item, .menu-item1, .drop-list > a {
         font-size: 12px;
     }
     
@@ -29,11 +29,11 @@
         text-align: center;
     }
     
-    .diskografija_box:nth-child(5),
+    /*.diskografija_box:nth-child(5),
     .diskografija_box:nth-child(9),
     .diskografija_box:nth-child(13) {
         margin-right: 65px;
-    }
+    }*/
     
     .diskografas-on-mobile {
         text-align: center;

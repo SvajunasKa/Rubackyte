@@ -6515,3 +6515,15 @@ a.view-all:hover {
     background: #e8e8e8;
     padding: 10px 0;
 }
+
+.straipsnis textarea{
+    height: 200px;
+}
+.table tr{
+    height: 100px;
+}
+.form-group label{
+    text-align: center !important;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}

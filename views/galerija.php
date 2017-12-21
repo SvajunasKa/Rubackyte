@@ -5,9 +5,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 galerija-on-mobile">
-                   <!-- <?php /*if($_SESSION['lang'] == 'lt' ) { echo "<p class='title'>Nuotraukas galima publęėėįuoti</p>";} */?>
-                    <?php /*if($_SESSION['lang'] == 'en' ) { echo "<p class='title'>Pictures free to publish</p>"; } */?>
-                    --><?php /*if($_SESSION['lang'] == 'fr' ) { echo "<p class='title'>Free to Après french lng</p>"; } */?>
+                    <?php if($_SESSION['lang'] == 'lt' ) { echo "<p class='title'>Nuotraukas galima publikuoti</p>";} ?>
+                    <?php if($_SESSION['lang'] == 'en' ) { echo "<p class='title'>Pictures free to publish</p>"; } ?>
+                    <?php if($_SESSION['lang'] == 'fr' ) { echo "<p class='title'>Free to Après french lng</p>"; } ?>
                     <?php foreach($nuotraukos as $nuotrauka) { ?>
                     <div class="img_background">
                         <a class="test-popup-link" href="assets/images/<?php echo $nuotrauka->nuotrauka ?>">

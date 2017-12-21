@@ -28,7 +28,7 @@
                 <li><a href="koncertu_grafikas.php"> Koncertų grafikas</a></li>
                 <li><a href="events.php"> Save The Date</a></li>
                 <li><a href="video.php"> Video</a></li>
-                <li><a href="press.php">Spauda</a></li>
+                <li><a href="spauda.php">Spauda</a></li>
             </ul>
         </li>
     </ul>

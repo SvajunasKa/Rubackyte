@@ -14,6 +14,7 @@
         $cd->pavadinimasEn = $_POST['pavadinimasEn'];
         $cd->pavadinimasFr = $_POST['pavadinimasFr'];
         $cd->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
+        $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload1'], 1);
         $cd->aprasymasLt = $_POST['aprasymasLt'];
         $cd->aprasymasEn = $_POST['aprasymasEn'];
         $cd->aprasymasFr = $_POST['aprasymasFr'];
@@ -29,6 +30,7 @@
         $cd2->pavadinimasEn = $_POST['pavadinimas_dvdEn'];
         $cd2->pavadinimasFr = $_POST['pavadinimas_dvdFr'];
         $cd2->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
+        $cd2->nuotrauka1 = imageUpload($_FILES['fileToUpload1'], 1);
         $cd2->aprasymasLt = $_POST['aprasymas_dvdLt'];
         $cd2->aprasymasEn = $_POST['aprasymas_dvdEn'];
         $cd2->aprasymasFr = $_POST['aprasymas_dvdFr'];
@@ -270,6 +272,12 @@
                                                     <input type="file" name="fileToUpload" id="fileToUpload">
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 col-sm-2 control-label">Nuotrauka 2</label>
+                                                <div class="col-lg-10">
+                                                    <input type="file" name="fileToUpload1" id="fileToUpload1">
+                                                </div>
+                                            </div>
 
                                             <div class="form-group">
                                                 <label class="col-lg-2 col-sm-2 control-label">Aprašymas LT</label>
@@ -366,49 +374,7 @@
                                     </div>
                                 </section>
                             </div>
-                            <div id="profile" class="tab-pane">
-                                <section class="panel">
-                                    <header class="panel-heading">
-                                        Koncertų youtube linkai
-                                    </header>
-                                    <?php $konc = DiskografijaKoncertai::all(); ?>
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Koncertas</th>
-                                            <th>Pavadinimas</th>
-                                        </tr>
-                                        <?php foreach($konc as $kon) { ?>
-                                        <tr>
-                                            <td><?php echo $kon->id; ?></td>
-                                            <td><?php echo $kon->koncertas; ?></td>
-                                            <td><?php echo $kon->pavadinimas; ?></td>
-                                            <td><a href="?istrinti_koncerta=<?php echo $kon->id; ?>" class="btn btn-sm btn-danger">Ištrinti</a></td>
-                                        </tr>
-                                        <?php } ?>
-                                        </thead>
-                                        <tbody>
-                                        
-                                        </tbody>
-                                    </table>
-                                    <div class="panel-body">
-                                        <form class="form-horizontal tasi-form" method="post">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 col-sm-2 control-label">Koncertas</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" name="koncertas" class="form-control">
-                                                </div>
-                                                <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" name="pavadinimas" class="form-control">
-                                                </div>
-                                            </div>
-                                            <input type="submit" name="koncertai" value="Išsaugoti" class="btn btn-success btn-md">
-                                        </form>
-                                    </div>
-                                </section>
-                            </div>
+
                         </div>
                     </div>
                 </section>

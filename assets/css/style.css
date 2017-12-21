@@ -46,8 +46,8 @@
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+   /* width: 80%;
+    margin: 0 auto;*/
 }
 
 /** HEADER SECTION **/
@@ -75,7 +75,6 @@
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    height: 70px;
     line-height: 70px;
 }
 
@@ -201,18 +200,18 @@
     text-decoration: none;
 }*/
 
-.bottom-navbar .navbar-nav > li > a.active_bottom {
+.bottom-navbar .navbar-nav > .menu-item > a.active_bottom {
     color: #e9be60 !important;
 }
 
-.bottom-navbar .navbar-nav > li > a.active_bottom::before {
+.bottom-navbar .navbar-nav > .menu-item > a.active_bottom::after {
     content: '';
     display: block;
     width: 17px;
     height: 46px;
-    position: absolute;
+    position: relative;
     top: -30px;
-    left: 40%;
+    left: 35%;
     background-repeat: no-repeat;
     background: url(images/Treble_Clef.png);
 }
@@ -503,7 +502,7 @@
     width: 229px;
     /*height: 229px;*/
     /*background-color: #4d3922;*/
-    margin-right: 64px;
+    margin-right: 40px;
     position: relative;
     margin-top: 10px;
 }
@@ -518,6 +517,7 @@
     margin: 5px 0 0 5px;
 }
 
+/*
 .diskografija_box:nth-child(5),
 .diskografija_box:nth-child(9),
 .diskografija_box:nth-child(13),
@@ -530,8 +530,9 @@
 .diskografija_box:nth-child(41) {
     margin-right: 0;
 }
+*/
 
-.diskografija_box:nth-child(6),
+/*.diskografija_box:nth-child(6),
 .diskografija_box:nth-child(7),
 .diskografija_box:nth-child(8),
 .diskografija_box:nth-child(9),
@@ -567,7 +568,7 @@
 .diskografija_box:nth-child(39),
 .diskografija_box:nth-child(40) {
     margin-top: 50px;
-}
+}*/
 
 .disk_box {
     padding-left: 0px;
@@ -1254,4 +1255,13 @@ footer ul li a:hover {
 .fa {
     color: #eba342;
     margin-right: 20px;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.spauda a{
+    color: blue;
 }
