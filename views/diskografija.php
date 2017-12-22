@@ -190,6 +190,10 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -221,6 +225,10 @@
                                         <?php $nuotrauka1 = 'assets/images/'.$cd3->nuotrauka1; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka1; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -247,6 +255,10 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -272,6 +284,14 @@
                                     <div class="col-sm-5">
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -300,6 +320,14 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -327,6 +355,10 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -353,6 +385,10 @@
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a class="close_btn">X</a>
@@ -378,6 +414,10 @@
                                     <div class="col-sm-5">
                                         <?php $nuotrauka2 = 'assets/images/'.$cd3->nuotrauka; ?>
                                         <div class="open_cd_img" style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <?php $nuotrauka3 = 'assets/images/'.$cd3->nuotrauka1; ?>
+                                        <div class="open_cd_img" style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover; background-position: center;"></div>
                                     </div>
                                 </div>
                             </div>

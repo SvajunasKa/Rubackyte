@@ -1,38 +1,45 @@
 <?php ob_start(); ?>
 <?php require_once("../../classes/config/init.php"); ?>
 <?php
-    if($session->is_signed_in()) {
+if ($session->is_signed_in()) {
 
-    } else {
-        redirect("/");
-    }
+} else {
+    redirect("/");
+}
 
-    if(isset($_GET['redaguoti']) == '') {
-        redirect('diskografija.php');
-    }
+if (isset($_GET['redaguoti']) == '') {
+    redirect('diskografija.php');
+}
 ?>
 <?php
-    if(isset($_POST['submit'])) {
-        $cd = DiskografijaCd::find($_GET['redaguoti']);
-        $cd->pavadinimasLt = $_POST['pavadinimasLt'];
-        $cd->pavadinimasEn = $_POST['pavadinimasEn'];
-        $cd->pavadinimasFr = $_POST['pavadinimasFr'];
-        if(!empty($_FILES['fileToUpload']["tmp_name"])) {
-            $cd->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
-            $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload'], 1);
-        }
-        /*if(!empty($_FILES['fileToUpload']["tmp_name"])) {
-            $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload'], 1);
-        }*/
-        $cd->aprasymasLt = $_POST['aprasymasLt2'];
-        $cd->aprasymasEn = $_POST['aprasymasEn2'];
-        $cd->aprasymasFr = $_POST['aprasymasFr2'];
-        if($cd->save()) {
-            $session->message(1);
-            redirect('diskografija_redaguoti.php?redaguoti='.$_GET['redaguoti']);
-        }
+if (isset($_POST['submit'])) {
+    $cd = DiskografijaCd::find($_GET['redaguoti']);
+    $cd->pavadinimasLt = $_POST['pavadinimasLt'];
+    $cd->pavadinimasEn = $_POST['pavadinimasEn'];
+    $cd->pavadinimasFr = $_POST['pavadinimasFr'];
+    if (!empty($_FILES['fileToUpload']["tmp_name"])) {
+        $cd->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
     }
+    $cd->aprasymasLt = $_POST['aprasymasLt2'];
+    $cd->aprasymasEn = $_POST['aprasymasEn2'];
+    $cd->aprasymasFr = $_POST['aprasymasFr2'];
+    if ($cd->save()) {
+        $session->message(1);
+        redirect('diskografija_redaguoti.php?redaguoti=' . $_GET['redaguoti']);
+    }
+}
 
+if (isset($_POST['submit1'])) {
+    $cd = DiskografijaCd::find($_GET['redaguoti']);
+
+    if (!empty($_FILES['fileToUpload']["tmp_name"])) {
+        $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload'], 1);
+    }
+    if ($cd->save()) {
+        $session->message(1);
+        redirect('diskografija_redaguoti.php?redaguoti=' . $_GET['redaguoti']);
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -197,12 +204,7 @@
                                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-sm-2 control-label">Nuotrauka 2</label>
-                                            <div class="col-lg-10">
-                                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                            </div>
-                                        </div>
+
                                         <div class="form-group">
                                             <label class="col-lg-2 col-sm-2 control-label">Aprašymas LT</label>
                                             <div class="col-lg-10">
@@ -227,6 +229,21 @@
                                             </div>
                                         </div>
                                         <input type="submit" name="submit" value="Išsaugoti"
+                                               class="btn btn-md btn-success">
+                                    </form>
+
+                                </div>
+                                <div class="panel-body">
+                                    <h3>Antros nuotrauka įkėlimui</h3>
+                                    <form class="form-horizontal tasi-form" method="post"
+                                          enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-sm-2 control-label">Nuotrauka 2</label>
+                                            <div class="col-lg-10">
+                                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                            </div>
+                                        </div>
+                                        <input type="submit" name="submit1" value="Išsaugoti"
                                                class="btn btn-md btn-success">
                                     </form>
                                 </div>

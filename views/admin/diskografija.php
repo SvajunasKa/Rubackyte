@@ -14,7 +14,6 @@
         $cd->pavadinimasEn = $_POST['pavadinimasEn'];
         $cd->pavadinimasFr = $_POST['pavadinimasFr'];
         $cd->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
-        $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload1'], 1);
         $cd->aprasymasLt = $_POST['aprasymasLt'];
         $cd->aprasymasEn = $_POST['aprasymasEn'];
         $cd->aprasymasFr = $_POST['aprasymasFr'];
@@ -23,6 +22,14 @@
             redirect('diskografija.php');
         }
     }
+if(isset($_POST['submit1'])) {
+    $cd = new DiskografijaCd();
+    $cd->nuotrauka1 = imageUpload($_FILES['fileToUpload'], 1);
+    if($cd->save()) {
+        $session->message(1);
+        redirect('diskografija.php');
+    }
+}
 
     if(isset($_POST['submit2'])) {
         $cd2 = new DiskografijaDvd();
@@ -273,13 +280,6 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-lg-2 col-sm-2 control-label">Nuotrauka 2</label>
-                                                <div class="col-lg-10">
-                                                    <input type="file" name="fileToUpload1" id="fileToUpload1">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
                                                 <label class="col-lg-2 col-sm-2 control-label">Aprašymas LT</label>
                                                 <div class="col-lg-10">
                                                     <textarea id="aprasymasLT" name="aprasymasLt" class="form-control" id="" cols="30" rows="10"></textarea>
@@ -294,6 +294,20 @@
                                                 </div>
                                             </div>
                                             <input type="submit" name="submit" value="Išsaugoti" class="btn btn-md btn-success">
+                                        </form>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3>Antros nuotrauka įkėlimui</h3>
+                                        <form class="form-horizontal tasi-form" method="post"
+                                              enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 col-sm-2 control-label">Nuotrauka 2</label>
+                                                <div class="col-lg-10">
+                                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                                </div>
+                                            </div>
+                                            <input type="submit" name="submit1" value="Išsaugoti"
+                                                   class="btn btn-md btn-success">
                                         </form>
                                     </div>
                                 </section>
