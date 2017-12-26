@@ -30,7 +30,9 @@ require_once("Models/EventsText.php");
 require_once("Models/Settings.php");
 require_once("Models/Informacija.php");
 require_once("Models/Press.php");
+require_once("Models/Audio.php");
 require_once("paginate.php");
+
 
 header('Cache-control: private'); // IE 6 FIX
 

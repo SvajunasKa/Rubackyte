@@ -8,20 +8,23 @@ if ($session->is_signed_in()) {
 }
 ?>
 <?php
-if(isset($_GET['istrinti_straipsni'])) {
+if (isset($_GET['istrinti_straipsni'])) {
     $straipsnis = Press::find($_GET['istrinti_straipsni']);
 
-    if($straipsnis->delete()) {
+    if ($straipsnis->delete()) {
         $session->message(6);
         redirect('spauda.php');
     }
 }
 
-if(isset($_POST['straipsnis'])) {
+if (isset($_POST['straipsnis'])) {
     $straipsnis = new Press();
     $straipsnis->straipsnisLt = $_POST['straipsnisLt'];
-
-    if($straipsnis->save()) {
+    $straipsnis->nuoroda = $_POST['nuoroda'];
+    if (!empty($_FILES['fileToUpload']["tmp_name"])) {
+        $straipsnis->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
+    }
+    if ($straipsnis->save()) {
         $session->message(3);
         redirect('spauda.php');
     }
@@ -111,16 +114,17 @@ if(isset($_POST['straipsnis'])) {
                                 <th>#</th>
                                 <th>Straipsnis</th>
                             </tr>
-                            <?php foreach($konc as $kon) { ?>
-                                <tr>
-                                    <td><?php echo $kon->id; ?></td>
-                                    <td><?php echo $kon->straipsnisLt; ?></td>
-                                    <td><a href="?istrinti_straipsni=<?php echo $kon->id; ?>" class="btn btn-sm btn-danger">Ištrinti</a></td>
-                                </tr>
-                            <?php } ?>
                             </thead>
                             <tbody>
-
+                            <?php foreach ($konc as $kon) { ?>
+                                <tr>
+                                    <td><?php echo $kon->id; ?></td>
+                                    <td><?php echo $kon->straipsnisLt; ?><?php echo $kon->nuoroda; ?> </td>
+                                    <td><?php echo $kon->nuotrauka; ?> </td>
+                                    <td><a href="?istrinti_straipsni=<?php echo $kon->id; ?>"
+                                           class="btn btn-sm btn-danger">Ištrinti</a></td>
+                                </tr>
+                            <?php } ?>
                             </tbody>
                         </table>
                         <div class="panel-body">
@@ -128,11 +132,18 @@ if(isset($_POST['straipsnis'])) {
                                 <div class="form-group">
                                     <label class="col-sm-12  control-label">Straipsnis</label>
                                     <div class="col-sm-12 straipsnis">
-                                        <textarea type="text" name="straipsnisLt" class="form-control"></textarea>
+                                        <textarea name="straipsnisLt" class="form-control"></textarea>
+                                        <label>nuoroda</label>
+                                        <input type="text" name="nuoroda">
                                     </div>
-
                                 </div>
-                                <input type="submit" name="straipsnis" value="Išsaugoti" class="btn btn-success btn-md">
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-sm-2 control-label">Nuotrauka</label>
+                                    <div class="col-lg-10">
+                                        <input type="file" name="fileToUpload" id="fileToUpload">
+                                    </div>
+                                </div>
+                                <button type="submit" name="straipsnis"  class="btn btn-success btn-md">Išsaugoti</button>
                             </form>
                         </div>
                     </section>
@@ -150,10 +161,6 @@ if(isset($_POST['straipsnis'])) {
 <script src="js/jquery-migrate.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
-
-<!--Nice Scroll-->
-<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
 <!--right slidebar-->
 <script src="js/slidebars.min.js"></script>
 

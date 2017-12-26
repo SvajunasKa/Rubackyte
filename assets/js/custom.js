@@ -61,7 +61,11 @@ $(document).ready(function () {
         $('.drop-list').one('click', function (e) {
             e.stopPropagation();
             $(this).trigger('click');
+
         });
     });
+     if($('.drop-list a').hasClass('active_bottom')){
+         $('.menu-item1').addClass('active_bottom');
+     };
 
 });

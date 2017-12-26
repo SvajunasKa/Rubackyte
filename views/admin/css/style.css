@@ -6527,3 +6527,6 @@ a.view-all:hover {
     font-size: 20px;
     margin-bottom: 10px !important;
 }
+table p{
+    display: inline-block;
+}

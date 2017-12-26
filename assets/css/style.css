@@ -92,7 +92,7 @@
     font-size: 17px;
     color: #d8af58;
     line-height: 24px;
-/ / padding-left: 5 px;
+    /*padding-left: 5px;*/
 }
 
 #header > nav:nth-child(1) > .menu-item > div.navbar-header > a {
@@ -151,9 +151,12 @@
 .bottom-navbar .navbar-nav > .menu-item, .drop-list > a:hover {
     color: #e9be60;
 }
+.menu-item1:hover{
+    color: #e9be60;
+}
 
 .bottom-navbar .navbar-nav > .menu-item, .menu-item1 {
-    padding-right: 5px;
+    padding-right: 31px;
     padding-left: 5px;
     cursor: pointer;
     display: inline-block;
@@ -203,6 +206,24 @@
 .bottom-navbar .navbar-nav > .menu-item > a.active_bottom {
     color: #e9be60 !important;
 }
+.menu-item1 .drop-list a.active_bottom{
+    color: #e9be60 !important;
+}
+.active_bottom{
+    color: #e9be60 !important;
+}
+.menu-item1.active_bottom:after{
+    content: '';
+    display: block;
+    width: 17px;
+    height: 46px;
+    position: relative;
+    top: -59px;
+    left: -21px;
+    background-repeat: no-repeat;
+    background: url(images/Treble_Clef.png);
+}
+
 
 .bottom-navbar .navbar-nav > .menu-item > a.active_bottom::after {
     content: '';
@@ -210,8 +231,8 @@
     width: 17px;
     height: 46px;
     position: relative;
-    top: -30px;
-    left: 35%;
+    top: -59px;
+    left: -21px;
     background-repeat: no-repeat;
     background: url(images/Treble_Clef.png);
 }
@@ -1263,5 +1284,22 @@ footer ul li a:hover {
     margin-top: 20px;
 }
 .spauda a{
-    color: blue;
+    color: #e1b75c;
+    cursor: pointer;
+}
+
+.spauda{
+    background-color: #26170b;
+    padding: 50px 0;
+}
+.spauda h1, h2, h3, h4, h5, h6{
+    color: #fffafc;
+    font-family: 'TrajanProRegular', sans-serif;
+}
+.spauda p{
+    color: #fffafc;
+    font-family: 'Open Sans', sans-serif;
+}
+.spauda .row{
+    margin: 0;
 }

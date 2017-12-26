@@ -9,41 +9,24 @@ if($session->is_signed_in()) {
 ?>
 <?php
 if(isset($_GET['istrinti_koncerta'])) {
-    $koncertas = DiskografijaKoncertai::find($_GET['istrinti_koncerta']);
+    $koncertas = Audio::find($_GET['istrinti_koncerta']);
 
     if($koncertas->delete()) {
         $session->message(6);
-        redirect('video.php');
+        redirect('audio.php');
     }
 }
 
 if(isset($_POST['koncertai'])) {
-    $koncertas = new DiskografijaKoncertai();
+    $koncertas = new Audio();
     $koncertas->koncertas = $_POST['koncertas'];
     $koncertas->pavadinimas = $_POST['pavadinimas'];
 
     if($koncertas->save()) {
         $session->message(3);
-        redirect('video.php');
+        redirect('audio.php');
     }
 }
-
-if(isset($_GET['istrinti'])) {
-    $istrinti = DiskografijaCd::find($_GET['istrinti']);
-    if($istrinti->delete()) {
-        $session->message(4);
-        redirect('video.php');
-    }
-}
-
-if(isset($_GET['istrinti_dvd'])) {
-    $istrinti = DiskografijaDvd::find($_GET['istrinti_dvd']);
-    if($istrinti->delete()) {
-        $session->message(5);
-        redirect('video.php');
-    }
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,17 +51,8 @@ if(isset($_GET['istrinti_dvd'])) {
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet">
 
-    <!--
-        <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-        <script>tinymce.init({ selector:'textarea', entity_encoding : "raw" });</script>
-    -->
-
-    <!-- Include Editor style. -->
     <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
     <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_style.min.css' rel='stylesheet' type='text/css' />
-
-
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -95,8 +69,7 @@ if(isset($_GET['istrinti_dvd'])) {
             <a href="index.html">
                 <img src="img/logo-icon.png" alt="">
                 <span class="brand-name">blackSPACE</span>
-            </a>
-        </div>
+            </a></div>
         <?php require_once('admin-menu.php'); ?>
     </div>
     <div class="body-content" style="min-height: 1200px;">
@@ -133,12 +106,11 @@ if(isset($_GET['istrinti_dvd'])) {
         </div>
         <div class="page-head">
             <h3>
-                Puslapis - Video
+                Puslapis - Audio
             </h3>
-            <span class="sub-title">Pagrindinis / Video</span>
+            <span class="sub-title">Pagrindinis / Audio</span>
         </div>
         <div class="wrapper">
-
             <section class="panel">
                 <header class="panel-heading tab-dark ">
                     <ul class="nav nav-tabs">
@@ -154,7 +126,7 @@ if(isset($_GET['istrinti_dvd'])) {
                                 <header class="panel-heading">
                                     Koncertų youtube linkai
                                 </header>
-                                <?php $konc = DiskografijaKoncertai::all(); ?>
+                                <?php $konc = Audio::all(); ?>
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>
@@ -178,12 +150,14 @@ if(isset($_GET['istrinti_dvd'])) {
                                 <div class="panel-body">
                                     <form class="form-horizontal tasi-form" method="post">
                                         <div class="form-group">
-                                            <label class="col-sm-2 col-sm-2 control-label">Koncertas</label>
+
                                             <div class="col-sm-10">
+                                                <label class="col-sm-2 col-sm-2 control-label">Koncertas (nuoroda)</label>
                                                 <input type="text" name="koncertas" class="form-control">
                                             </div>
-                                            <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
+
                                             <div class="col-sm-10">
+                                                <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
                                                 <input type="text" name="pavadinimas" class="form-control">
                                             </div>
                                         </div>
@@ -199,27 +173,16 @@ if(isset($_GET['istrinti_dvd'])) {
         <footer>
             2016 &copy;
         </footer>
-    </div><!-- body content end-->
+    </div>
 </section>
-
-
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery-migrate.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
-
-<!--Nice Scroll-->
-<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
-<!--right slidebar-->
 <script src="js/slidebars.min.js"></script>
-
-<!--switchery-->
 <script src="js/switchery/switchery.min.js"></script>
 <script src="js/switchery/switchery-init.js"></script>
-
-<!--Sparkline Chart-->
 <script src="js/sparkline/jquery.sparkline.js"></script>
 <script src="js/sparkline/sparkline-init.js"></script>
 <script src="js/toastr-master/toastr.js"></script>

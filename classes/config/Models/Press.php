@@ -9,9 +9,9 @@
 class Press extends DbOptions
 {
     protected static $db_table = "ziniasklaida";
-    protected static $db_table_fields = array('id', 'straipsnisLt', 'straipsnisEn', 'straipsnisFr');
+    protected static $db_table_fields = array('id', 'straipsnisLt', 'nuoroda', 'nuotrauka');
     public $id;
     public $straipsnisLt;
-    public $astraipsnisEn;
-    public $straipsnisFr;
+    public $nuoroda;
+    public $nuotrauka;
 }

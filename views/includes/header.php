@@ -85,10 +85,10 @@
                         <div class="menu-item"><a <?php if(strpos($uri, 'repertuaras') !== false) { echo 'class="active_bottom"'; } ?> href="repertuaras.php#muza"><?php echo $meniu->archyvasLt; ?></a></div>
                         <div class="menu-item"><a <?php if(strpos($uri, 'koncertai') !== false) { echo 'class="active_bottom"'; } ?> href="koncertai.php#muza"><?php echo $meniu->grafikasLt; ?></a></div>
                         <div class="menu-item"><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaLt; ?></a></div>
-                        <div class="menu-item1"><a <?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?> href="#"><?php echo $meniu->mediaLt; ?></a>
+                        <div class="menu-item1" <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?>> <?php echo $meniu->mediaLt; ?>
                             <div class="show-menu">
                                  <div class="drop-list"> <a <?php if(strpos($uri, 'audio') !== false) { echo 'class="active_bottom"'; } ?> href="audio.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></div>
-                                <div class="drop-list"> <a <?php if(strpos($uri, 'DiskografijaKoncertai') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></div>
+                                <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></div>
                                 <div class="drop-list"> <a <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?> href="press.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></div>
                             </div>
                         </div>
