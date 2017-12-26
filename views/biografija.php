@@ -29,10 +29,6 @@
                         <?php if($_SESSION['lang'] == 'lt' ) { echo $biografija->aprasymasLt3; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo $biografija->aprasymasEn3; } ?>
                         <?php if($_SESSION['lang'] == 'fr' ) { echo $biografija->aprasymasFr3; } ?>
-<!--
-                        <p class="about_p2">
-                        <p class="about_p">
--->
                     </div>
                 </div>
             </div>

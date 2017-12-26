@@ -22,17 +22,17 @@ $(document).ready(function () {
     });
 
     // ijungia cd vinilo popupa
-   /* $('.img_info').click(function (event) {
-        var open = $(this).next().next();
-        open.fadeIn('slow');
-    });*/
+    /* $('.img_info').click(function (event) {
+         var open = $(this).next().next();
+         open.fadeIn('slow');
+     });*/
 
     // ijungia cd vinilo popupa
     $('#diskografija .img_info').click(function (event) {
         var open = $(this).children().attr('data-id');
         console.log($(this).children().attr('data-id'));
         $('#open_cd' + open).show();
-       $('body').css('overflow', 'hidden');
+        $('body').css('overflow', 'hidden');
     });
 
     $('.dvd-small-img').click(function (event) {
@@ -48,24 +48,41 @@ $(document).ready(function () {
         },
         type: 'image'
     });
-    $('.menu-item1').click(function (e) {
+    $('.bottom-navbar .menu-item1').click(function (e) {
         e.preventDefault();
-        $(".show-menu").slideToggle("fast");
-        if ($('.menu-item1 a').is(':not(.no-after)')) {
+        $(".bottom-navbar .show-menu").slideToggle("fast");
+        var offset = $('.bottom-navbar').offset();
+        console.log(offset.top);
+        if (offset.top < 570 || offset.top > 880 ){
+            console.log('aaa');
             $('.show-menu').css('position', 'absolute').css('bottom', '100%');
-        }
-        else {
+        } else {
+            console.log('zemyn');
             $('.show-menu').css('position', 'absolute').css('bottom', 'unset');
         }
 
         $('.drop-list').one('click', function (e) {
             e.stopPropagation();
             $(this).trigger('click');
-
         });
+
     });
-     if($('.drop-list a').hasClass('active_bottom')){
-         $('.menu-item1').addClass('active_bottom');
-     };
+    if ($('.drop-list a').hasClass('active_bottom')) {
+        $('.menu-item1').addClass('active_bottom');
+    }
+
+    $('footer .menu-item1').click(function (e) {
+        e.preventDefault();
+        $('footer .show-menu').slideToggle('fast');
+        $('.show-menu').css('position', 'absolute').css('bottom', '100%');
+
+        $('footer .drop-list').one('click', function (e) {
+
+            $(this).trigger('click');
+        });
+
+
+    });
+
 
 });

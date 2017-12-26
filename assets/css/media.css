@@ -13,7 +13,7 @@
         height: auto;
     }
     
-    footer ul li a {
+    footer .navbar-nav .menu-item a {
         font-size: 12px;
     }
     
@@ -111,11 +111,14 @@
         width: 100%;
     }
     
-    footer ul li a.active_bottom::before {
+    footer .menu-item a.active_bottom::before {
+        display:  none;
+    }
+    footer .menu-item1.active_bottom::after {
         display:  none;
     }
     
-    footer ul li a {
+    footer .menu-item, .menu-item1 a {
         margin-right: 0px;
         padding-right: 5px;
     }

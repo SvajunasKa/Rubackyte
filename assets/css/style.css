@@ -900,23 +900,25 @@ footer {
     width: 100%;
 }
 
-footer ul {
+footer .navbar-nav {
     list-style: none;
-    margin-top: 65px
+    margin-top: 60px;
+    line-height: 1.4;
 }
 
-footer ul li {
+footer .navbar-nav .menu-item, .menu-item1 {
     display: inline-block;
     position: relative;
+    padding-left: 5px;
+    padding-right: 15px;
 }
 
-footer ul li a {
+footer .navbar-nav .menu-item a {
     font-family: TrajanProRegular;
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-right: 46px;
     -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
 }
@@ -925,23 +927,37 @@ footer ul li:nth-child(6) a {
     margin-right: 0px;
 }
 
-footer ul li a:hover {
-    color: #dedede;
+footer .menu-item a:hover {
+    color: #e9be60;
     text-decoration: none;
 }
 
 footer ul li .active_bottom {
     color: #fff;
 }
+footer .drop-list{
+    padding:15px;
+}
 
-footer ul li a.active_bottom::before {
+footer .menu-item a.active_bottom::before {
     content: '';
     display: block;
     width: 17px;
     height: 46px;
     position: absolute;
     bottom: -5px;
-    left: -25px;
+    left: -15px;
+    background-repeat: no-repeat;
+    background: url(images/Treble_Clef.png);
+}
+footer .menu-item1.active_bottom::after{
+    content: '';
+    display: block;
+    width: 17px;
+    height: 46px;
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
     background-repeat: no-repeat;
     background: url(images/Treble_Clef.png);
 }
