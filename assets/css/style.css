@@ -746,6 +746,15 @@
     left: -20px;
     margin-top: 10px;
 }
+.contact .contact_row a{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #eba342;;
+    display: inline-block;
+    cursor: pointer;
+}
 
 #kontaktai .contact .contact_row img {
     display: inline-block;
@@ -911,6 +920,7 @@ footer .navbar-nav .menu-item, .menu-item1 {
     position: relative;
     padding-left: 5px;
     padding-right: 15px;
+    z-index: 100;
 }
 
 footer .navbar-nav .menu-item a {
@@ -956,8 +966,7 @@ footer .menu-item1.active_bottom::after{
     width: 17px;
     height: 46px;
     position: absolute;
-    bottom: -5px;
-    left: -15px;
+    top:-12px;
     background-repeat: no-repeat;
     background: url(images/Treble_Clef.png);
 }
@@ -1312,9 +1321,10 @@ footer ul li a:hover {
     color: #fffafc;
     font-family: 'TrajanProRegular', sans-serif;
 }
-.spauda p{
-    color: #fffafc;
-    font-family: 'Open Sans', sans-serif;
+.spauda p, span{
+    color: #fffafc !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
 }
 .spauda .row{
     margin: 0;

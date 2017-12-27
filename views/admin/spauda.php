@@ -133,15 +133,12 @@ if (isset($_POST['straipsnis'])) {
                                     <label class="col-sm-12  control-label">Straipsnis</label>
                                     <div class="col-sm-12 straipsnis">
                                         <textarea name="straipsnisLt" class="form-control"></textarea>
-                                        <label>nuoroda</label>
-                                        <input type="text" name="nuoroda">
+
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-lg-2 col-sm-2 control-label">Nuotrauka</label>
-                                    <div class="col-lg-10">
-                                        <input type="file" name="fileToUpload" id="fileToUpload">
-                                    </div>
+                                    <label class="col-sm-12  control-label">nuoroda</label>
+                                    <input type="text" name="nuoroda">
                                 </div>
                                 <button type="submit" name="straipsnis"  class="btn btn-success btn-md">Išsaugoti</button>
                             </form>

@@ -6530,3 +6530,8 @@ a.view-all:hover {
 table p{
     display: inline-block;
 }
+.form-group input{
+    width: 97%;
+    margin: 0 auto;
+    display: block;
+}

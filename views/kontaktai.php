@@ -127,10 +127,10 @@ if (isset($_POST['siusti'])) {
                             </div>
                             <div class="contact_row">
                                 <?php if ($_SESSION['lang'] == 'en') { ?>
-                                    <?php echo "<i class=\"fa fa-globe fa-2x\"></i><p>www.conciertosgrapa.com</p>" ?>
+                                    <?php echo "<i class=\"fa fa-globe fa-2x\"></i><a href='http://www.conciertosgrapa.com' target='_blank'>www.conciertosgrapa.com</a>" ?>
                                 <?php } ?>
                                 <?php if ($_SESSION['lang'] == 'fr') { ?>
-                                    <?php echo "<i class=\"fa fa-globe fa-2x\"></i><p>www.bs-artist.com</p>"?>
+                                    <?php echo "<i class=\"fa fa-globe fa-2x\"></i><a href='http://www.bs-artist.com' target='_blank'>www.bs-artist.com</a>"?>
                                 <?php } ?>
                             </div>
                             <div class="contact_row">
@@ -184,7 +184,7 @@ if (isset($_POST['siusti'])) {
                             </div>
                             <div class="contact_row">
                                 <?php if ($_SESSION['lang'] == 'en') { ?>
-                                    <?php echo "<i class='fa fa-globe fa-2x'></i> <p>www.bs-artist.com</p>"?>
+                                    <?php echo "<i class='fa fa-globe fa-2x'></i> <p><a href='http://www.bs-artist.com' target='_blank'>www.bs-artist.com</a></p>"?>
                                 <?php } ?>
 
                             </div>
