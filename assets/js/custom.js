@@ -3,17 +3,6 @@ $(document).ready(function () {
         $('.message-send').fadeOut('slow');
     });
 
-    // apatinis meniu fixed kai priscrollina iki jo
-    $('.bottom-navbar').scrollToFixed();
-    $('.bottom-navbar').bind('fixed.ScrollToFixed', function () {
-        $(this).addClass('navbarOnScroll');
-        $(this).find('a').addClass('no-after');
-    });
-    $('.bottom-navbar').bind('unfixed.ScrollToFixed', function () {
-        $(this).removeClass('navbarOnScroll');
-        $(this).find('a').removeClass('no-after');
-    });
-
     // isjungia cd vinilo popupa
     $('.close_btn').click(function () {
         var close = $(this).closest('section');
@@ -50,11 +39,6 @@ $(document).ready(function () {
     $('.bottom-navbar .menu-item1').click(function (e) {
         e.preventDefault();
         $(".bottom-navbar .show-menu").slideToggle("fast");
-        var offset = $('.bottom-navbar').offset();
-
-        if ($('.bottom-navbar').css('top') != 0){
-            console.log('aaaa');
-        }
 
         if ($('nav').hasClass('navbarOnScroll')) {
             $('.show-menu').css('position', 'absolute').css('bottom', 'unset');
@@ -68,6 +52,20 @@ $(document).ready(function () {
         });
 
     });
+
+    $(window).scroll(function (e) {
+        $(window).bind('scroll', function() {
+            var navHeight = $( window ).height() - 70;
+            if ($(window).scrollTop() > navHeight) {
+                $('.bottom-navbar').addClass('fixed navbarOnScroll');
+            }
+            else {
+                $('.bottom-navbar').removeClass('fixed navbarOnScroll');
+            }
+        });
+    });
+
+
     if ($('.drop-list a').hasClass('active_bottom')) {
         $('.menu-item1').addClass('active_bottom');
     }
@@ -83,8 +81,8 @@ $(document).ready(function () {
         });
     });
 
-    $('.menu-item').hover(function (e) {
-        //e.preventDefault()
-        $('.bottom-navbar').addClass('navbarOnScroll');
-    })
+    // $('.menu-item').hover(function (e) {
+    //     //e.preventDefault()
+    //     $('.bottom-navbar').addClass('navbarOnScroll');
+    // })
 });

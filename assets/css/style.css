@@ -75,7 +75,7 @@
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    line-height: 70px;
+    line-height: 80px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -120,7 +120,7 @@
     background: url(images/meniu-juosta.png);
     background-position: center;
     background-size: cover;
-    height: 70px;
+    height: 80px;
     border-bottom: 0px;
 }
 
@@ -1329,4 +1329,9 @@ footer ul li a:hover {
 }
 .spauda .row{
     margin: 0;
+}
+.fixed{
+    position: fixed;
+    top:0;
+    z-index: 1000;
 }

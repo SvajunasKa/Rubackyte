@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css?v=1.2">
     <link rel="stylesheet" href="assets/css/media.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -64,7 +63,7 @@
             $actual_link = 'http://'.$_SERVER['HTTP_HOST'].'/';
         ?>
         <!--    BOTTOM MENU    -->
-        <nav  class="bottom-navbar navbar navbar-inverse">
+        <nav  class="bottom-navbar navbar navbar-inverse navbarOnScroll">
             <div class="container on_mobile_100">
 
                 <div class="navbar-header">
