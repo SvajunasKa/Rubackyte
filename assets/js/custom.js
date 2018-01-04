@@ -30,7 +30,6 @@ $(document).ready(function () {
     // ijungia cd vinilo popupa
     $('#diskografija .img_info').click(function (event) {
         var open = $(this).children().attr('data-id');
-        console.log($(this).children().attr('data-id'));
         $('#open_cd' + open).show();
         $('body').css('overflow', 'hidden');
     });
@@ -53,15 +52,13 @@ $(document).ready(function () {
         $(".bottom-navbar .show-menu").slideToggle("fast");
         var offset = $('.bottom-navbar').offset();
 
-        // if ($('.bottom-navbar').css('top') != 0){
-        //     console.log('aaaa');
-        // }
+        if ($('.bottom-navbar').css('top') != 0){
+            console.log('aaaa');
+        }
 
         if ($('nav').hasClass('navbarOnScroll')) {
-            console.log('aaa');
             $('.show-menu').css('position', 'absolute').css('bottom', 'unset');
         } else {
-            console.log('zemyn');
             $('.show-menu').css('position', 'absolute').css('bottom', '100%');
         }
 
@@ -82,7 +79,6 @@ $(document).ready(function () {
 
         $('footer .drop-list').one('click', function (e) {
             e.stopPropagation();
-            console.log('ccc');
             $(this).trigger('click');
         });
     });
