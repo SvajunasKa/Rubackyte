@@ -9,13 +9,6 @@ $(document).ready(function () {
         close.fadeOut('slow');
         $('body').css('overflow', 'auto');
     });
-
-    // ijungia cd vinilo popupa
-    /* $('.img_info').click(function (event) {
-         var open = $(this).next().next();
-         open.fadeIn('slow');
-     });*/
-
     // ijungia cd vinilo popupa
     $('#diskografija .img_info').click(function (event) {
         var open = $(this).children().attr('data-id');
@@ -36,6 +29,7 @@ $(document).ready(function () {
         },
         type: 'image'
     });
+    // drop-down menu
     $('.bottom-navbar .menu-item1').click(function (e) {
         e.preventDefault();
         $(".bottom-navbar .show-menu").slideToggle("fast");
@@ -53,17 +47,20 @@ $(document).ready(function () {
 
     });
 
-    $(window).scroll(function (e) {
-        $(window).bind('scroll', function() {
-            var navHeight = $( window ).height() - 70;
-            if ($(window).scrollTop() > navHeight) {
-                $('.bottom-navbar').addClass('fixed navbarOnScroll');
-            }
-            else {
-                $('.bottom-navbar').removeClass('fixed navbarOnScroll');
-            }
+    if ($(window).width() > 767){
+        $(window).scroll(function (e) {
+            $(window).bind('scroll', function() {
+                var navHeight = $( window ).height() - 70;
+                if ($(window).scrollTop() > navHeight) {
+                    $('.bottom-navbar').addClass('fixed navbarOnScroll');
+                }
+                else {
+                    $('.bottom-navbar').removeClass('fixed navbarOnScroll');
+                }
+            });
         });
-    });
+    }
+
 
 
     if ($('.drop-list a').hasClass('active_bottom')) {
@@ -80,9 +77,4 @@ $(document).ready(function () {
             $(this).trigger('click');
         });
     });
-
-    // $('.menu-item').hover(function (e) {
-    //     //e.preventDefault()
-    //     $('.bottom-navbar').addClass('navbarOnScroll');
-    // })
 });

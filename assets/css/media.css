@@ -1,22 +1,22 @@
 /** MEDIA QUERY **/
 @media only screen and (max-width: 1200px) {
     .archyvas-data2 {
-    margin-left: 155px;
-}
+        margin-left: 155px;
+    }
 
     .bottom-navbar .navbar-nav > .menu-item, .menu-item1, .drop-list > a {
         font-size: 12px;
     }
-    
+
     #main_about {
         padding-bottom: 40px;
         height: auto;
     }
-    
+
     footer .navbar-nav .menu-item a {
         font-size: 12px;
     }
-    
+
     .archyvas_juosta .metai {
         margin-right: 35px;
     }
@@ -24,60 +24,59 @@
     #main_about_her .main_img_about {
         width: 360px;
     }
-    
+
     .galerija-on-mobile {
         text-align: center;
     }
-    
+
     /*.diskografija_box:nth-child(5),
     .diskografija_box:nth-child(9),
     .diskografija_box:nth-child(13) {
         margin-right: 65px;
     }*/
-    
     .diskografas-on-mobile {
         text-align: center;
     }
-    
+
     .diskografas-on-mobile h2 {
         text-align: left;
         padding-left: 25px;
     }
-    
+
     #dvd .right-side {
         text-align: center;
     }
-    
+
     #dvd .right-side .youtube-g p {
         left: 50%;
     }
-    
+
     .left-side {
         padding-left: 25px;
     }
-    
+
     .diskografija_box section,
     .dvd_box section {
         width: 100% !important;
         left: 0;
     }
-    
+
     #diskografija h2 {
         font-size: 16px;
     }
-    
+
     .message-sended {
         width: 70%;
     }
-    
+
     .inside_box_cd .open_cd_img {
         height: 380px;
     }
-    
+
     .inside_box_cd h2 {
         font-size: 15px;
     }
-    
+
     .onlyDVD .inside_box_cd .open_cd_img {
         height: 425px;
     }
@@ -88,137 +87,138 @@
         width: 100%;
         padding-left: 10px;
     }
-    
+
     .bottom-navbar .navbar-nav > .menu-item > a {
         font-size: 10px;
     }
-    
+
     .bottom-navbar .navbar-nav {
         margin-left: 60px;
     }
-    
+
     #main_about_her img {
         height: 169px;
         width: 266px;
     }
-    
+
     #main_about_her .main_img_about {
         height: 88px;
         width: 255px;
     }
-    
+
     .on_mobile_footer {
         width: 100%;
     }
-    
+
     footer .menu-item a.active_bottom::before {
-        display:  none;
+        display: none;
     }
+
     footer .menu-item1.active_bottom::after {
-        display:  none;
+        display: none;
     }
-    
+
     footer .menu-item, .menu-item1 a {
         margin-right: 0px;
         padding-right: 5px;
     }
-    
+
     .on_mobile_footer ul {
         text-align: center;
     }
-    
+
     .archyvas-padding-none {
         width: 100%;
     }
-    
+
     .diskografas-on-mobile h2 {
         text-align: center;
     }
-    
-    
+
     .diskografija_box {
         margin-right: 20px !important;
     }
-    
+
     .diskografija_box:nth-child(6), .diskografija_box:nth-child(7), .diskografija_box:nth-child(8), .diskografija_box:nth-child(9), .diskografija_box:nth-child(10), .diskografija_box:nth-child(11), .diskografija_box:nth-child(12), .diskografija_box:nth-child(13) {
         margin-top: 10px;
     }
-    
+
     .left-side {
         padding-left: 0px;
     }
-    
+
     #dvd .left-side,
     #dvd .right-side {
         width: 100%;
     }
-    
+
     #dvd .right-side {
         margin-top: 30px;
         text-align: left;
     }
-    
+
     #dvd .right-side .youtube-g p {
         left: 0%;
     }
-    
+
     .inside_box_cd h2 {
         font-size: 12px;
     }
-    
+
     .open_box_cd ul {
         font-size: 12px;
     }
-    
+
     #diskografija h2 {
         font-size: 13px;
     }
 
     .archyvas-data2 {
-    	margin-left: 120px;
+        margin-left: 120px;
     }
-    
+
     .inside_box_cd .open_cd_img {
         height: 280px;
     }
-    
+
     .onlyDVD .inside_box_cd .open_cd_img {
         height: 320px;
     }
-    
+
 }
 
 @media only screen and (max-width: 913px) {
-     .archyvas_juosta .metai {
+    .archyvas_juosta .metai {
         margin-right: 25px;
         font-size: 14px;
-    }   
-    
+    }
+
     .archyvas_juosta {
         font-size: 14px;
     }
-    
+
     .archyvas-data {
         width: 23%;
     }
-    
+
     .archyvas-informacija {
         width: 77%;
     }
 
     .archyvas-data2 {
-    	margin-left: 135px;
+        margin-left: 135px;
     }
-    
+
 }
 
 @media only screen and (max-width: 870px) {
     .bottom-navbar .navbar-nav {
         margin-left: 20px;
     }
-    
+
     .bottom-navbar .navbar-nav > .menu-item {
-        padding-right: 1px;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -228,43 +228,45 @@
     }
 }
 
-
 @media only screen and (max-width: 767px) {
     #header {
         min-height: 500px;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         display: block;
-        height:auto;
+        height: auto;
     }
-    .menu-item, .menu-item1{
+
+    .menu-item, .menu-item1 {
         width: 100%;
         text-align: center;
     }
-    .show-menu{
+
+    .show-menu {
         position: unset !important;
     }
-    
+
     .top_menu_mobile {
         display: block;
         position: absolute;
         top: 5px;
         right: 15px;
-    }  
-    
+    }
+
     .navbar-toggle {
         margin-top: 20px;
         margin-right: 30px;
     }
-    
+
     .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
-    
+
     .navbar-toggle {
         border-radius: 0;
     }
-    
+
     #navbar {
         position: relative;
         z-index: 99999;
@@ -272,145 +274,145 @@
         margin-top: 11px;
         border-bottom: 1px solid rgba(243, 243, 243, 0.6);
     }
-    
-    .container>.navbar-collapse {
+
+    .container > .navbar-collapse {
         margin: 0;
     }
-    
+
     .navbar-nav,
     .bottom-navbar .navbar-nav {
         margin: 0;
     }
-    
+
     .navbar-nav .menu-item a {
         text-align: center;
     }
-    
+
     .bottom-navbar .navbar-nav > .menu-item > a.active_bottom::before {
         display: none;
     }
-    
+
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background-color: transparent;
     }
-    
+
     #main_about {
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     #main_about p {
         font-size: 14px;
     }
-    
-    .container>.navbar-header {
+
+    .container > .navbar-header {
         margin: 0;
     }
-    
+
     .left-margin {
-        padding-left:0px;
+        padding-left: 0px;
     }
-    
+
     footer ul li {
         display: block;
         text-align: left;
     }
-    
+
     footer {
         height: auto;
         padding-bottom: 40px;
     }
-    
+
     footer .social-media {
         bottom: -10px;
     }
-    
+
     .mobile-top-contacts {
         margin-top: 50px;
     }
-    
+
     #kontaktai {
         /*height: 680px;*/
     }
-    
+
     .padding_on_mobile_contacts {
         padding-left: 30px;
         padding-right: 30px;
     }
-    
+
     .forma input {
         width: 100%;
     }
-    
+
     #footer {
         height: 210px;
     }
-    
+
     #footer .bottom_img {
         height: 250px;
     }
-    
+
     .on-mobile-koncertai-first,
     .on-mobile-koncertai-second {
         margin-top: 0 !important;
     }
-    
+
     .gallery_bottom h2:nth-child(1),
     .gallery_bottom h2:nth-child(2) {
         font-size: 14px;
     }
-    
+
     #dvd .left-side {
         text-align: center;
     }
-    
+
     #dvd h2 {
         text-align: center;
     }
-    
+
     #dvd .dvd_box {
         margin: 0 auto;
     }
-    
+
     #open_cd .open_box_cd {
         width: 95%;
         height: 800px;
     }
-    
+
     #open_cd .inside_box_cd {
         width: 98%;
         height: 780px;
         margin: 10px 0 0 7px;
     }
-    
+
     .inside_box_cd .open_cd_img {
         width: 200px;
         height: 200px;
         margin: 20px auto;
     }
-    
+
     #open_cd > div > div > div > div > div > div > h2 {
         text-align: center;
     }
-    
+
     .diskografija_box section .open_box_cd,
     .dvd_box section .open_box_cd {
         height: auto;
         width: 97%;
     }
-    
+
     .close_btn {
         right: 30px;
     }
-    
+
     .diskografija_box section .inside_box_cd,
     .dvd_box section .inside_box_cd {
         height: 500px;
         margin-bottom: 10px;
         overflow-y: scroll;
     }
-    
-    .inside_box_cd{
+
+    .inside_box_cd {
         overflow-y: scroll;
         height: 100%;
     }
@@ -423,15 +425,23 @@
         display: block;
         float: none;
         margin: 0 auto;
-	margin-top: 20px;
+        margin-top: 20px;
     }
 
-     .archyvas-data2 {
-    	margin-left: 165px;
+    .archyvas-data2 {
+        margin-left: 165px;
     }
-    
+
     .message-sended h3 {
         font-size: 19px;
+    }
+
+    .bottom-navbar .navbar-nav > .menu-item > a.active_bottom::after {
+        display: none;
+    }
+
+    .navbar-nav {
+        line-height: 48px;
     }
 }
 
@@ -441,34 +451,34 @@
         position: relative !important;
         margin: 0 auto !important;
         float: none !important;
-    } 
+    }
 }
 
 @media only screen and (max-width: 661px) {
-     #main_about {
+    #main_about {
         height: 450px;
-     }   
-    
+    }
+
     .archyvas-data,
     .archyvas-informacija {
         width: 100%;
         text-align: center;
     }
-    
+
     .on-mobile-koncertai-first {
         text-align: center;
         margin-bottom: 15px;
     }
-    
+
     .on-mobile-koncertai-second {
         text-align: center;
     }
 
     .archyvas-data2 {
-    	margin-left: 0;
+        margin-left: 0;
         text-align: center;
     }
-    
+
     .cds {
         margin-left: 0;
         text-align: center;
@@ -476,11 +486,11 @@
 }
 
 @media only screen and (max-width: 555px) {
-     #main_about {
+    #main_about {
         height: auto;
-        padding-bottom: 40px; 
-     }   
-    
+        padding-bottom: 40px;
+    }
+
     #header {
         min-height: 250px;
     }
@@ -497,101 +507,101 @@
         border: 1px solid transparent;
         border-radius: 4px;
     }
-    
+
     .bottom-navbar {
         top: 214px;
     }
-    
+
     .navbar {
         min-height: 25px !important;
     }
-    
+
     .navbar-toggle {
         margin-top: 9px;
         margin-right: 25px;
     }
-    
+
     .navbar-brand {
         padding: 15px 5px;
         font-size: 14px;
     }
-    
+
     .navbar-inverse .navbar-brand {
         font-size: 14px;
     }
-    
+
     #kontaktai h2,
     #kontaktai .contact .contact_row p,
     #kontaktu_forma h2 {
         font-size: 16px;
     }
-    
+
     #kontaktai h3 {
         font-size: 18px;
     }
-    
+
     .forma label {
         font-size: 14px;
     }
-    
+
     #navbar {
-        margin-top: 2px;
+        margin-top: 7px;
     }
-    
+
     .diskografija_box {
         margin-right: 5px !important;
     }
-    
+
     .diskografas-on-mobile h2 {
         padding-left: 0;
     }
-    
+
     .bottom-navbar {
-        height: 35px;
-        
+        height: 36px;
+
     }
 
-    
     .bottom-navbar .navbar-toggle {
         margin-top: 7px;
         margin-right: 17px;
     }
-    
+
     .bottom-navbar .navbar-toggle {
-         border-radius: 0px;   
+        border-radius: 0px;
     }
-    
+
     .mobile_top_menu .navbar-brand {
         padding: 5px 5px;
         font-size: 12px;
     }
-    
+
     .mobile_top_menu .navbar-brand {
         height: 32px;
     }
-    
+
     .navbar-inverse .navbar-nav > li > a > span {
         display: none;
     }
+
     .navbar-inverse .navbar-nav > li > a {
         font-size: 12px;
         padding: 0;
     }
-    
+
     .navbar-header .navbar-toggle {
         display: block;
         float: none;
         margin: 0 auto;
-	margin-top: 5px;
+        margin-top: 7px;
     }
-    
+
 }
 
 @media only screen and (max-width: 473px) {
     #footer {
         height: 140px;
-    } 
-    
+    }
+
     #footer .bottom_img {
         height: 150px;
     }
@@ -602,15 +612,15 @@
     .on-mobile-koncertai-second {
         font-size: 14px;
     }
-    
+
     .archyvas_juosta {
         font-size: 12px;
     }
-        
+
     .archyvas_juosta .metai {
         font-size: 12px;
     }
-    
+
     .on-mobile-koncertai-second .metai {
         width: 100%;
     }
@@ -621,35 +631,35 @@
         width: 264px;
         height: 164px;
     }
-    
+
     #dvd .right-side .youtube-g a {
         width: 254px;
         height: 130px;
     }
-    
+
     #dvd .right-side a iframe {
         width: 244px;
         height: 120px;
         margin: 5px 0 0 5px;
     }
-    
+
     #open_cd .open_box_cd {
         width: 90%;
         height: 900px;
     }
-    
+
     #open_cd .inside_box_cd {
         width: 98%;
         height: 890px;
         margin: 5px 0 0 2px;
     }
-    
+
     .inside_box_cd .open_cd_img {
         width: 200px;
         height: 200px;
         margin: 0 auto;
     }
-    
+
     #open_cd > div > div > div > div > div > div > h2 {
         text-align: center;
     }
@@ -666,22 +676,22 @@
         height: 58px;
         width: 185px;
     }
-    
+
     #main_about_her img {
         height: 109px;
         width: 206px;
     }
-    
+
     .padding_on_mobile_contacts {
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     #dvd .dvd_box {
         width: 233px;
         height: 356px;
     }
-    
+
     #dvd .dvd_box .dvd-small-img {
         width: 223px;
         height: 346px;
@@ -693,7 +703,7 @@
         width: 231px;
         height: 183px;
     }
-    
+
     #galerija .img_background .small-img {
         width: 221px;
         height: 173px;
@@ -703,60 +713,60 @@
 
 @media only screen and (max-height: 750px) {
     .outsideS .open_box_cd {
-    	margin-top: 3%;
+        margin-top: 3%;
     }
 }
 
 @media only screen and (max-width: 1050px) {
-   .outsideS .open_box_cd,
-   .outsideS .inside_box_cd {
-    	width: 97%;
-   }
+    .outsideS .open_box_cd,
+    .outsideS .inside_box_cd {
+        width: 97%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-	.outsideS .open_box_cd,
-	.outsideS .inside_box_cd {
-    		width: 95%;
-	}
+    .outsideS .open_box_cd,
+    .outsideS .inside_box_cd {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-	.outsideS .open_box_cd {
-    		width: 90%;
-	}
+    .outsideS .open_box_cd {
+        width: 90%;
+    }
 
-	.outsideS .inside_box_cd {
-		width: 94%;
-	}
+    .outsideS .inside_box_cd {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-height: 600px) {
     .outsideS .inside_box_cd {
-	height: 480px;
-     }
+        height: 480px;
+    }
 
     .outsideS .open_box_cd {
-	height: 500px;
+        height: 500px;
     }
 }
 
 @media only screen and (max-height: 520px) {
     .outsideS .inside_box_cd {
-	height: 440px;
-     }
+        height: 440px;
+    }
 
     .outsideS .open_box_cd {
-	height: 460px;
+        height: 460px;
     }
 }
 
 @media only screen and (max-height: 480px) {
     .outsideS .inside_box_cd {
-	height: 380px;
-     }
+        height: 380px;
+    }
 
     .outsideS .open_box_cd {
-	height: 400px;
+        height: 400px;
     }
 }

@@ -28,7 +28,17 @@
                         <img src="assets/images/Muza-IMG.png" alt="">
                         <?php if($_SESSION['lang'] == 'lt' ) { echo $biografija->aprasymasLt3; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo $biografija->aprasymasEn3; } ?>
+	                    <?php if ( $_SESSION['lang'] == 'en' ) {
+		                    echo "<p>Download
+                   <a href=\"http://muza.fr/files/Biography-short-EN.pdf\" target='_blank'>short</a> or 
+                    <a href=\"http://muza.fr/files/Biography-long-EN.pdf\" target='_blank'>full</a> version of biography in PDF</p>";
+	                    } ?>
                         <?php if($_SESSION['lang'] == 'fr' ) { echo $biografija->aprasymasFr3; } ?>
+	                    <?php if ( $_SESSION['lang'] == 'fr' ) {
+		                    echo "<p>Biographie 
+                   <a href=\"http://muza.fr/files/Biographie-courte-FR.pdf\" target='_blank'>courte en PDF</a> </p> 
+                    <p>Biographie <a href=\"http://muza.fr/files/Biographie-longue-FR.pdf\" target='_blank'>longue en PDF</a></p>";
+	                    } ?>
                     </div>
                 </div>
             </div>

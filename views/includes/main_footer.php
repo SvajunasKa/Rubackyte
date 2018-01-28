@@ -64,8 +64,8 @@
                         </div>
                     <?php } ?>
                     <ul class="social-media">
-                        <li><a href="#"><img src="assets/images/social-facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="assets/images/youtube.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/muza.rubackyte.golay"><img src="assets/images/social-facebook.png" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/user/sarunas55"><img src="assets/images/youtube.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>

@@ -130,7 +130,7 @@
 
                     </div>
                     <?php } ?>
-                </div>
+
                 <div id="muza"></div>
                 <!--/.nav-collapse -->
             </div>
