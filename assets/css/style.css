@@ -250,7 +250,7 @@
     font-family: BellotaItalic;
     font-style: italic;
     font-weight: 300;
-    font-size: 19px;
+    font-size: 18px;
     text-align: justify;
     line-height: 38px;
     margin-top: 50px;
@@ -333,16 +333,18 @@
 }
 
 .archyvas_juosta {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .archyvas-data {
-    width: 22%;
+    width: 20%;
     font-family: TrajanProRegular;
     color: #e9be60;
     font-weight: 400;
     display: inline-block;
     float: left;
+    font-size: 18px;
+
 }
 
 .archyvas-informacija {
@@ -351,6 +353,7 @@
     font-weight: 400;
     color: #fffafc;
     display: inline-block;
+    height: 40px;
 }
 
 .archyvas-informacija a {
@@ -446,6 +449,7 @@
 .author-info {
     margin-top: 5px;
     text-align: right;
+    font-size: 16px;
 }
 
 .title {
@@ -492,7 +496,7 @@
     margin-right: 60px;
     font-family: TrajanProRegular;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .archyvas_juosta .metai a.active_koncertu_metai {
@@ -520,7 +524,7 @@
     font-family: TrajanProRegular;
     font-weight: 400;
     font-size: 20px;
-    color: #d6d6d6;
+    /*color: #d6d6d6;*/
 }
 
 .diskografija_box {
@@ -734,7 +738,7 @@
 
 #kontaktai h3 {
     font-family: TrajanPro;
-    font-size: 24px;
+    font-size: 22px;
     color: #eba342;
     font-weight: 400;
     padding-left: 10px;
@@ -754,7 +758,7 @@
 }
 .contact .contact_row a{
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 20px;
     color: #eba342;;
@@ -770,7 +774,7 @@
 
 #kontaktai .contact .contact_row p {
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 20px;
     color: #412b15;
@@ -1175,6 +1179,7 @@ footer .social-media li {
 .events {
     margin-left: 20%;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .cds,
@@ -1276,6 +1281,7 @@ footer ul li a:hover {
 
 .archyvas-data2.datess {
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .outsideS {
@@ -1340,4 +1346,7 @@ footer ul li a:hover {
     position: fixed;
     top:0;
     z-index: 1000;
+}
+.spauda h1{
+    font-size: 20px;
 }

@@ -7,6 +7,6 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'utnalt_svajunas');
+define('DB_NAME', 'muza_fr');
 
 ?>

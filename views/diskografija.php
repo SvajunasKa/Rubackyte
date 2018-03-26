@@ -360,7 +360,7 @@
                                 <div class="col-sm-7">
 									<?php $nuotrauka3 = 'assets/images/' . $cd3->nuotrauka1; ?>
                                     <div class="open_cd_img"
-                                         style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover;
+                                         style="background: url('<?php echo $nuotrauka3; ?>'); background-size: contain;
                                                  background-position: center; background-repeat: no-repeat"></div>
                                 </div>
                             </div>
@@ -482,7 +482,7 @@
                                 <div class="col-sm-7">
 									<?php $nuotrauka3 = 'assets/images/' . $cd3->nuotrauka1; ?>
                                     <div class="open_cd_img"
-                                         style="background: url('<?php echo $nuotrauka3; ?>'); background-size: cover;
+                                         style="background: url('<?php echo $nuotrauka3; ?>'); background-size: contain;
                                                  background-position: center; background-repeat: no-repeat"></div>
                                 </div>
                             </div>

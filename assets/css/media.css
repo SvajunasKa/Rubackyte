@@ -61,7 +61,7 @@
         left: 0;
     }
 
-    #diskografija h2 {
+    #diskografija h2, .title {
         font-size: 16px;
     }
 
@@ -169,8 +169,11 @@
         font-size: 12px;
     }
 
+    #diskografija .title {
+        font-size: 14px;
+    }
     #diskografija h2 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .archyvas-data2 {
@@ -185,12 +188,16 @@
         height: 320px;
     }
 
+    .title, .events{
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 913px) {
     .archyvas_juosta .metai {
         margin-right: 25px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .archyvas_juosta {
@@ -463,6 +470,7 @@
     .archyvas-informacija {
         width: 100%;
         text-align: center;
+        font-size: 14px;
     }
 
     .on-mobile-koncertai-first {
@@ -618,12 +626,13 @@
     }
 
     .archyvas_juosta .metai {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .on-mobile-koncertai-second .metai {
         width: 100%;
     }
+    fa
 }
 
 @media only screen and (max-width: 385px) {
