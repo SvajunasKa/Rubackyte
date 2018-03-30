@@ -420,7 +420,7 @@
     }
 
     .inside_box_cd {
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
         height: 100%;
     }
 
@@ -729,7 +729,7 @@
 @media only screen and (max-width: 1050px) {
     .outsideS .open_box_cd,
     .outsideS .inside_box_cd {
-        width: 97%;
+        width: calc(100% - 25px);
     }
 }
 
