@@ -255,13 +255,13 @@
 		    <?php $cdvinilas7 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasEn LIKE 'Private%' AND FIELD(ID,41,42,43)" ); ?>
             <div class="col-sm-12 diskografas-on-mobile">
 			    <?php if ( $_SESSION['lang'] == 'lt' ) {
-				    echo '<p class="title">VINILAS</p>';
+				    echo '<p class="title">VINILAI</p>';
 			    } ?>
 			    <?php if ( $_SESSION['lang'] == 'en' ) {
-				    echo '<p class="title">VILNYL</p>';
+				    echo '<p class="title">VINYL</p>';
 			    } ?>
 			    <?php if ( $_SESSION['lang'] == 'fr' ) {
-				    echo '<p class="title">VILNYLE</p>';
+				    echo '<p class="title">VINYL</p>';
 			    } ?>
 			    <?php foreach ( $cdvinilas7 as $cd1 ) { ?>
                     <div class="diskografija_box">
@@ -286,7 +286,7 @@
                 <!--        ====================================================================================================-->
 
         <div class="row">
-		    <?php $cdvinilas10 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasEn LIKE 'Private%' AND FIELD(ID,36,37,38)" ); ?>
+		    <?php $cdvinilas10 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasEn LIKE 'Private%' AND FIELD(ID,39,40)" ); ?>
             <div class="col-sm-12 diskografas-on-mobile">
 			    <?php if ( $_SESSION['lang'] == 'lt' ) {
 				    echo '<p class="title">KITI</p>';
@@ -319,7 +319,7 @@
         </div>
         <!-- =================================================================================================-->
         <div class="row">
-		    <?php $cdvinilas9 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasEn LIKE 'Private%' AND FIELD(ID,39,40)" ); ?>
+		    <?php $cdvinilas9 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasEn LIKE 'Private%' AND FIELD(ID,36, 37, 38)" ); ?>
             <div class="col-sm-12 diskografas-on-mobile">
 
 
@@ -330,7 +330,7 @@
 				    echo '<p class="title">PRIVATE</p>';
 			    } ?>
 			    <?php if ( $_SESSION['lang'] == 'fr' ) {
-				    echo '<p class="title">PERSONNEL</p>';
+				    echo '<p class="title">PRIVÉ</p>';
 			    } ?>
 
 

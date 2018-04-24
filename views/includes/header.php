@@ -57,12 +57,12 @@
             </div>
         </nav>
 
-        <?php
-            $uri = $_SERVER['REQUEST_URI'];
-            $kategorija = explode('/', $uri);
-            $actual_link = 'http://'.$_SERVER['HTTP_HOST'].'/';
-        ?>
-        <!--    BOTTOM MENU    -->
+
+        <!--    BOTTOM MENU    --> <?php
+	    $uri = $_SERVER['REQUEST_URI'];
+	    $kategorija = explode('/', $uri);
+	    $actual_link = 'http://'.$_SERVER['HTTP_HOST'].'/';
+	    ?>
         <nav  class="bottom-navbar navbar navbar-inverse navbarOnScroll">
             <div class="container on_mobile_100">
 
