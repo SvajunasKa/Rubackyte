@@ -75,7 +75,7 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js?v=0.0.3"></script>
 </body>
 
 </html>

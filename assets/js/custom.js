@@ -8,7 +8,18 @@ $(document).ready(function () {
         var close = $(this).closest('section');
         close.fadeOut('slow');
         $('body').css('overflow', 'auto');
+
     });
+    $(window).keydown(function (e) {
+        console.log('aaa');
+        var close = $('.close_btn').closest('section');
+        if (e.keyCode == 27) {
+            close.fadeOut('slow');
+            $('body').css('overflow', 'auto');
+        }
+    })
+
+
     // ijungia cd vinilo popupa
     $('#diskografija .img_info').click(function (event) {
         var open = $(this).children().attr('data-id');
