@@ -46,7 +46,7 @@ $(document).ready(function () {
         $(".bottom-navbar .show-menu").slideToggle("fast");
 
         if ($('nav').hasClass('navbarOnScroll')) {
-            $('.show-menu').css('position', 'absolute').css('bottom', 'unset');
+            $('.show-menu').css('position', 'absolute').css('bottom', 'unset').css('left', '-10px');
         } else {
             $('.show-menu').css('position', 'absolute').css('bottom', '100%');
         }
@@ -81,7 +81,7 @@ $(document).ready(function () {
     $('footer .menu-item1').click(function (e) {
         e.preventDefault();
         $('footer .show-menu').slideToggle('fast');
-        $('.show-menu').css('position', 'absolute').css('bottom', '100%');
+        $('.show-menu').css('position', 'absolute').css('bottom', '100%').css('left', '-10px');
 
         $('footer .drop-list').one('click', function (e) {
             e.stopPropagation();

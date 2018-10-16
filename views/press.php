@@ -4,11 +4,17 @@
 <section class="spauda">
         <div class="row">
             <div class="container">
-                <div class="col-sm-offset-1 col-sm-10">
+
+
+                    <div class="heading">
+                        <?php if($_SESSION['lang'] == 'lt' ) { echo '<p>Spauda</p>'; } ?>
+                        <?php if($_SESSION['lang'] == 'en' ) { echo '<p> Press</p>'; } ?>
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<p> Press</p>'; } ?>
+                    </div>
                         <?php echo $straip->straipsnisLt; ?>
                         <?php echo $straip->nuoroda; ?>
                         <?php echo $straip->nuotrauka; ?>
-                </div>
+
             </div>
         </div>
 </section>

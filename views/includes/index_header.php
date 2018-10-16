@@ -121,7 +121,7 @@
                 <div class="menu-item"><a <?php if(strpos($uri, 'galerija') !== false) { echo 'class="active_bottom"'; } ?> href="galerija.php#muza"><?php echo $meniu->galerijaFr; ?></a></div>
                 <div class="menu-item1"><?php if(strpos($uri, 'media') !== false) { echo 'class="active_bottom"'; } ?><?php echo $meniu->mediaEn; ?></>
                 <div class="show-menu">
-                    <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></div>
+                    <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="audio.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></div>
                     <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></div>
                     <div class="drop-list"> <a <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?> href="press.php#muza"><?php echo $meniu->subMenu3Fr; ?></a></div>
                 </div>

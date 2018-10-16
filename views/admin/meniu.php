@@ -237,18 +237,18 @@
                                                 <input class="form-control calendar" name="mediaLt" value="<?php echo $meniu->mediaLt; ?>">
                                             </div>
                                         </div>
-
-                                        <div class="form-group">
+                                            <p>sub meniu</p>
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu1Lt" value="<?php echo $meniu->subMenu1Lt; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu2Lt" value="<?php echo $meniu->subMenu2Lt; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu3Lt" value="<?php echo $meniu->subMenu3Lt; ?>">
                                             </div>
@@ -298,17 +298,18 @@
                                                 <input class="form-control calendar" name="mediaEn" value="<?php echo $meniu->mediaEn; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <p>sub meniu</p>
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu1En" value="<?php echo $meniu->subMenu1En; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu2En" value="<?php echo $meniu->subMenu2En; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu3En" value="<?php echo $meniu->subMenu3En; ?>">
                                             </div>
@@ -358,17 +359,18 @@
                                                 <input class="form-control calendar" name="mediaFr" value="<?php echo $meniu->mediaFr; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <p>sub meniu</p>
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu1Fr" value="<?php echo $meniu->subMenu1Fr; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu2Fr" value="<?php echo $meniu->subMenu2Fr; ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu3Fr" value="<?php echo $meniu->subMenu3Fr; ?>">
                                             </div>

@@ -5,9 +5,12 @@
             <div class="col-sm-12">
                 <?php $youtube = DiskografijaKoncertai::all('ASC'); ?>
                 <div class="right-side">
-                    <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>KONCERTINIAI ĮRAŠAI</h2>'; } ?>
-                    <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
-                    <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
+                    <div class="heading">
+                        <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>KONCERTINIAI ĮRAŠAI</h2>'; } ?>
+                        <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
+                    </div>
+
                     <?php foreach($youtube as $you) { ?>
                         <div class="youtube-g">
                             <a href="#" target="_blank">

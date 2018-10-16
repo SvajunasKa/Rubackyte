@@ -198,7 +198,7 @@
                 <div class="show-menu">
                     <div class="drop-list"><a <?php if ( strpos( $uri, 'video' ) !== false ) {
 							echo 'class="active_bottom"';
-						} ?> href="video.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></div>
+						} ?> href="audio.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></div>
                     <div class="drop-list"><a <?php if ( strpos( $uri, 'video' ) !== false ) {
 							echo 'class="active_bottom"';
 						} ?> href="video.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></div>
