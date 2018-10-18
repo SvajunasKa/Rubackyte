@@ -81,7 +81,7 @@ $(document).ready(function () {
     $('footer .menu-item1').click(function (e) {
         e.preventDefault();
         $('footer .show-menu').slideToggle('fast');
-        $('.show-menu').css('position', 'absolute').css('bottom', '100%').css('left', '-10px');
+        $('.show-menu').css('position', 'absolute').css('bottom', '100%').css('left', '-15px');
 
         $('footer .drop-list').one('click', function (e) {
             e.stopPropagation();
