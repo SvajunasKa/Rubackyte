@@ -7,8 +7,8 @@
                 <div class="right-side">
                     <div class="heading">
                         <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>KONCERTINIAI ĮRAŠAI</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>CONCERTINO RECORDS</h2>'; } ?>
+                        <?php if($_SESSION['lang'] == 'en' ) { echo '<h2>Concert records</h2>'; } ?>
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2>Enregistrements vidéo</h2>'; } ?>
                     </div>
 
                     <?php foreach($youtube as $you) { ?>

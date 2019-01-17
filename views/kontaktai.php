@@ -3,11 +3,15 @@
 <?php $inf = informacija::find(1); ?>
 <?php $web = kontaktai::find(1); ?>
 <?php
-if (isset($_POST['siusti'])) {
+if (isset($_POST['siusti']) && isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
     $vardas = $_POST['vardas'];
     $telefonas = $_POST['telefonas'];
     $email = $_POST['email'];
     $komentaras = $_POST['komentaras'];
+
+    $secret = '6Le6OYoUAAAAAHy3ClmcZbpPEFMNW8YZjEZGBq4r';
+    $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+    $responseData = json_decode($verifyResponse);
 
     $subject = "Gavote naują užklausą per svetainę, nuo: " . $vardas . " ";
     $fullMessage = "
@@ -21,12 +25,16 @@ if (isset($_POST['siusti'])) {
     $headers .= "From: MUZA <info@muza.fr>\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-    if (mail($mainEmail->email, $subject, $fullMessage, $headers)) {
-        $_SESSION['issiusta_message'] = 1;
-    } else {
-        echo 'error';
+    if($responseData->success){
+        if (mail($mainEmail->email, $subject, $fullMessage, $headers)) {
+            $_SESSION['issiusta_message'] = 1;
+        } else {
+            echo 'error';
+        }
+    }else{
+        echo "capcha error";
     }
+
 
 }
 ?>
@@ -256,6 +264,7 @@ if (isset($_POST['siusti'])) {
                         echo "<label for=''>Commentaire:</label>";
                     } ?>
                     <textarea name="komentaras" id="" cols="10" rows="6"></textarea>
+                    <div class="g-recaptcha" data-theme="dark"	 data-sitekey="6Le6OYoUAAAAABpAEqSQRkdHU5mGljWACMQocV3o"></div>
                     <?php if ($_SESSION['lang'] == 'lt') {
                         echo '<img src="assets/images/send-symbol.png" alt=""><input type="submit" name="siusti" value="Siųsti">';
                     } ?>

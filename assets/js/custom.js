@@ -46,9 +46,9 @@ $(document).ready(function () {
         $(".bottom-navbar .show-menu").slideToggle("fast");
 
         if ($('nav').hasClass('navbarOnScroll')) {
-            $('.show-menu').css('position', 'absolute').css('bottom', 'unset').css('left', '-10px');
+            $('.show-menu').css('position', 'absolute').css('bottom', 'unset').css('left', '-15px');
         } else {
-            $('.show-menu').css('position', 'absolute').css('bottom', '100%');
+            $('.show-menu').css('position', 'absolute').css('bottom', '100%').css('left', '-15px');
         }
 
         $('.drop-list').one('click', function (e) {

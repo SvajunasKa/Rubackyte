@@ -174,7 +174,7 @@
 .drop-list{
     background-color: #3c250c;
     padding: 0 15px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .media {
@@ -656,6 +656,7 @@
     font-size: 20px;
     color: #d6d6d6;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 #dvd .left-side {
@@ -697,25 +698,29 @@
 }
 
 #dvd .right-side .youtube-g a {
-    position: absolute;
+    /*position: absolute;*/
     width: 344px;
     height: 181px;
     background-color: #4d3723;
-
+    display: inline-block;
 }
 
 #dvd .right-side .youtube-g:nth-child(3),
-#dvd .right-side .youtube-g:nth-child(5) {
+#dvd .right-side .youtube-g:nth-child(5),
+#dvd .right-side .youtube-g:nth-child(7),
+#dvd .right-side .youtube-g:nth-child(9),
+#dvd .right-side .youtube-g:nth-child(11){
     margin-right: 0px;
 }
 
 #dvd .right-side .youtube-g p {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #d6d6d6;
+    top: 190px;
 }
 
 #dvd .right-side a iframe {

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css?v=1.2">
     <link rel="stylesheet" href="assets/css/media.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108550676-1"></script>
     <script>
