@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-		    <?php $cdvinilas11 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE ID='46'" ); ?>
+		    <?php $cdvinilas11 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasLt LIKE 'NEW'" ); ?>
             <div class="col-sm-12 diskografas-on-mobile">
 			    <?php if ( $_SESSION['lang'] == 'lt' ) {
 				    echo '<h2>' . $web->cd_lt . '</h2>';
@@ -17,13 +17,13 @@
 			    } ?>
 			    
 				<?php if ( $_SESSION['lang'] == 'lt' ) {
-				    echo '<p class="title">NAUJIENA</p>';
+				    echo '<p class="title">CD NAUJIENOS</p>';
 			    } ?>
 			    <?php if ( $_SESSION['lang'] == 'en' ) {
-				    echo '<p class="title">NEW</p>';
+				    echo '<p class="title">NEW CD RELEASES</p>';
 			    } ?>
 			    <?php if ( $_SESSION['lang'] == 'fr' ) {
-				    echo '<p class="title">NOUVEAU</p>';
+				    echo '<p class="title">NOUVEAUTÉS CD</p>';
 			    } ?>
 
 			    <?php foreach ( $cdvinilas11 as $cd1 ) { ?>
@@ -49,6 +49,36 @@
 	
 	<!--====================================================================================-->
 	
+        <div class="row">
+		    <?php $cdvinilas12 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasLt LIKE 'Vilnius Piano Festival'" ); ?>
+            <div class="col-sm-12 diskografas-on-mobile">
+			    <?php echo '<p class="title">';
+			    echo $cdvinilas12[0]->pavadinimasLt;
+			    '</p>' ?>
+				
+			    <?php foreach ( $cdvinilas12 as $cd1 ) { ?>
+                    <div class="diskografija_box">
+                        <div class="img_info">
+						    <?php if ( $_SESSION['lang'] == 'lt' ) {
+							    echo '<p class="title_info" data-id="' . $cd1->id . '"></p>';
+						    } ?>
+						    <?php if ( $_SESSION['lang'] == 'en' ) {
+							    echo '<p class="title_info" data-id="' . $cd1->id . '"></p>';
+						    } ?>
+						    <?php if ( $_SESSION['lang'] == 'fr' ) {
+							    echo '<p class="title_info" data-id="' . $cd1->id . '"></p>';
+						    } ?>
+                        </div>
+					    <?php $nuotrauka = 'assets/images/' . $cd1->nuotrauka; ?>
+                        <div class="disk-small-img"
+                             style='background: url("<?php echo $nuotrauka; ?>") no-repeat; background-size: cover; background-position: center'></div>
+                    </div>
+			    <?php } ?>
+            </div>
+        </div>
+
+        <!--====================================================================================-->
+		
         <div class="row">
 		    <?php $cdvinilas8 = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasLt LIKE 'LIGIA'" ); ?>
             <div class="col-sm-12 diskografas-on-mobile">
@@ -77,7 +107,7 @@
             </div>
         </div>
 
-        <!--====================================================================================-->
+        <!--====================================================================================-->		
 
         <div class="row">
 			<?php $cdvinilas = DiskografijaCd::find_by_query( "SELECT * FROM diskografija_cd WHERE pavadinimasLt LIKE 'MARCO POLO'" ); ?>
@@ -880,6 +910,48 @@
         </div>
     </section>
 <?php } ?>
+
+<!--=================================================================================-->
+
+<?php foreach ( $cdvinilas12 as $cd3 ) { ?>
+    <section id="open_cd<?php echo $cd3->id; ?>" class="outsideS">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="open_box_cd">
+                        <div class="inside_box_cd">
+                            <div class="row">
+
+								<?php if ( $_SESSION['lang'] == 'lt' ) {
+									echo '<h2>' . $cd3->pavadinimasLt . '</h2>';
+								} ?>
+								<?php if ( $_SESSION['lang'] == 'en' ) {
+									echo '<h2>' . $cd3->pavadinimasEn . '</h2>';
+								} ?>
+								<?php if ( $_SESSION['lang'] == 'fr' ) {
+									echo '<h2>' . $cd3->pavadinimasFr . '</h2>';
+								} ?>
+                                <div class="col-sm-5">
+									<?php $nuotrauka2 = 'assets/images/' . $cd3->nuotrauka; ?>
+                                    <div class="open_cd_img"
+                                         style="background: url('<?php echo $nuotrauka2; ?>'); background-size: cover; background-position: center;"></div>
+                                </div>
+                                <div class="col-sm-7">
+									<?php $nuotrauka3 = 'assets/images/' . $cd3->nuotrauka1; ?>
+                                    <div class="open_cd_img"
+                                         style="background: url('<?php echo $nuotrauka3; ?>'); background-size: contain;
+                                                 background-position: center; background-repeat: no-repeat"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="close_btn">X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
+
 
 <!--====================================================================================================-->
 <section id="dvd">

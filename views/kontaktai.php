@@ -22,7 +22,7 @@ if (isset($_POST['siusti']) && isset($_POST['g-recaptcha-response']) && !empty($
                 El.paštas: <b>" . $email . "</b><br>
                 Komentaras: <b>" . $komentaras . "</b><br>
                 ";
-    $headers .= "From: MUZA <info@muza.fr>\r\n";
+    $headers .= "From: MUZA <info@muza.fr>\r\n"; 
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     if($responseData->success){

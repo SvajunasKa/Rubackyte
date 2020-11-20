@@ -9,7 +9,7 @@
                     <div class="heading">
                         <?php if($_SESSION['lang'] == 'lt' ) { echo '<h2>Spauda</h2>'; } ?>
                         <?php if($_SESSION['lang'] == 'en' ) { echo '<h2> Press</h2>'; } ?>
-                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2> Press</h2>'; } ?>
+                        <?php if($_SESSION['lang'] == 'fr' ) { echo '<h2> Presse</h2>'; } ?>
                     </div>
                         <?php echo $straip->straipsnisLt; ?>
                         <?php echo $straip->nuoroda; ?>
