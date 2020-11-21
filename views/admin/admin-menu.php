@@ -30,6 +30,7 @@
                 <li><a href="video.php"> Video</a></li>
                 <li><a href="spauda.php">Spauda</a></li>
                 <li><a href="audio.php">Audio</a></li>
+                <li><a href="interview.php">Interviu</a></li>
             </ul>
         </li>
     </ul>

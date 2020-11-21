@@ -20,6 +20,7 @@
         $meniu->subMenu1Lt = $_POST['subMenu1Lt'];
         $meniu->subMenu2Lt = $_POST['subMenu2Lt'];
         $meniu->subMenu3Lt = $_POST['subMenu3Lt'];
+        $meniu->subMenu4Lt = $_POST['subMenu4Lt'];
         if($meniu->save()) {
             $session->message(1);
             redirect('meniu.php');
@@ -38,7 +39,7 @@
         $meniu->subMenu1En = $_POST['subMenu1En'];
         $meniu->subMenu2En = $_POST['subMenu2En'];
         $meniu->subMenu3En = $_POST['subMenu3En'];
-
+        $meniu->subMenu4En = $_POST['subMenu4En'];
         if($meniu->save()) {
             $session->message(2);
             redirect('meniu.php');
@@ -57,6 +58,7 @@
         $meniu->subMenu1Fr = $_POST['subMenu1Fr'];
         $meniu->subMenu2Fr = $_POST['subMenu2Fr'];
         $meniu->subMenu3Fr = $_POST['subMenu3Fr'];
+        $meniu->subMenu4Fr = $_POST['subMenu4Fr'];
         if($meniu->save()) {
             $session->message(3);
             redirect('meniu.php');
@@ -202,6 +204,7 @@
                                     </header>
                                     <form class="form-horizontal tasi-form" method="post">
                                         <?php $meniu = Meniu::find(1); ?>
+
                                         <div class="form-group">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="biografijaLt" value="<?php echo $meniu->biografijaLt; ?>">
@@ -251,6 +254,11 @@
                                         <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu3Lt" value="<?php echo $meniu->subMenu3Lt; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group sub-menu">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu4Lt" value="<?php echo $meniu->subMenu4Lt; ?>">
                                             </div>
                                         </div>
                                         <input type="submit" name="lietuviskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
@@ -314,6 +322,11 @@
                                                 <input class="form-control calendar" name="subMenu3En" value="<?php echo $meniu->subMenu3En; ?>">
                                             </div>
                                         </div>
+                                        <div class="form-group sub-menu">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu4En" value="<?php echo $meniu->subMenu4En; ?>">
+                                            </div>
+                                        </div>
                                         <input type="submit" name="angliskai_submit" value="Atnaujinti" class="btn btn-md btn-success">
                                     </form>
                                 </section>
@@ -373,6 +386,11 @@
                                         <div class="form-group sub-menu">
                                             <div class="col-sm-10">
                                                 <input class="form-control calendar" name="subMenu3Fr" value="<?php echo $meniu->subMenu3Fr; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group sub-menu">
+                                            <div class="col-sm-10">
+                                                <input class="form-control calendar" name="subMenu4Fr" value="<?php echo $meniu->subMenu4Fr; ?>">
                                             </div>
                                         </div>
                                         <input type="submit" name="prancuziskai_submit" value="Atnaujinti" class="btn btn-md btn-success">

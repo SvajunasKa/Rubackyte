@@ -21,6 +21,7 @@
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'audio') !== false) { echo 'class="active_bottom"'; } ?> href="audio.php#muza"><?php echo $meniu->subMenu1Lt; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2Lt; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?> href="press.php#muza"><?php echo $meniu->subMenu3Lt; ?></a></div>
+                                    <div class="drop-list"> <a <?php if(strpos($uri, 'interview') !== false) { echo 'class="active_bottom"'; } ?> href="interview.php#muza"><?php echo $meniu->subMenu4Lt; ?></a></div>
                                 </div>
                             </div>
                             <div class="menu-item"><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiLt; ?></a></div>
@@ -38,6 +39,8 @@
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'audio') !== false) { echo 'class="active_bottom"'; } ?> href="audio.php#muza"><?php echo $meniu->subMenu1En; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2En; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?> href="press.php#muza"><?php echo $meniu->subMenu3En; ?></a></div>
+                                    <div class="drop-list"> <a <?php if(strpos($uri, 'interview') !== false) { echo 'class="active_bottom"'; } ?> href="interview.php#muza"><?php echo $meniu->subMenu4En; ?></a></div>
+
                                 </div>
                             </div>
                             <div class="menu-item"><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiEn; ?></a></div>
@@ -55,6 +58,8 @@
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'audio') !== false) { echo 'class="active_bottom"'; } ?> href="audio.php#muza"><?php echo $meniu->subMenu1Fr; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'video') !== false) { echo 'class="active_bottom"'; } ?> href="video.php#muza"><?php echo $meniu->subMenu2Fr; ?></a></div>
                                     <div class="drop-list"> <a <?php if(strpos($uri, 'press') !== false) { echo 'class="active_bottom"'; } ?> href="press.php#muza"><?php echo $meniu->subMenu3Fr; ?></a></div>
+                                    <div class="drop-list"> <a <?php if(strpos($uri, 'interview') !== false) { echo 'class="active_bottom"'; } ?> href="interview.php#muza"><?php echo $meniu->subMenu4Fr; ?></a></div>
+
                                 </div>
                             </div>
                             <div class="menu-item"><a <?php if(strpos($uri, 'kontaktai') !== false) { echo 'class="active_bottom"'; } ?> href="kontaktai.php#muza"><?php echo $meniu->kontaktaiFr; ?></a></div>

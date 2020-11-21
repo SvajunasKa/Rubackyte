@@ -8,7 +8,7 @@
             'kontaktaiEn', 'biografijaFr', 'diskografijaFr', 'grafikasFr',
             'archyvasFr', 'galerijaFr', 'kontaktaiFr', 'mediaLt', 'mediaEn', 'mediaFr',
             'subMenu1Lt', 'subMenu1En', 'subMenu1Fr', 'subMenu2Lt', 'subMenu2En', 'subMenu2Fr',
-            'subMenu3Lt', 'subMenu3En','subMenu3Fr');
+            'subMenu3Lt', 'subMenu3En','subMenu3Fr','subMenu4Lt', 'subMenu4En', 'subMenu4Fr' );
         public $id;
         public $biografijaLt;
         public $diskografijaLt;
@@ -40,7 +40,9 @@
         public $subMenu3Lt;
         public $subMenu3En;
         public $subMenu3Fr;
-
+        public $subMenu4Lt;
+        public $subMenu4En;
+        public $subMenu4Fr;
     }
 
 ?>
