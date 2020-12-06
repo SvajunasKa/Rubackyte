@@ -1,44 +1,44 @@
 <?php ob_start(); ?>
 <?php require_once("../../classes/config/init.php"); ?>
 <?php
-if($session->is_signed_in()) {
+if ($session->is_signed_in()) {
 
 } else {
     redirect("/");
 }
 ?>
 <?php
-if(isset($_GET['istrinti_koncerta'])) {
+if (isset($_GET['istrinti_koncerta'])) {
     $koncertas = DiskografijaKoncertai::find($_GET['istrinti_koncerta']);
 
-    if($koncertas->delete()) {
+    if ($koncertas->delete()) {
         $session->message(6);
         redirect('video.php');
     }
 }
 
-if(isset($_POST['koncertai'])) {
+if (isset($_POST['koncertai'])) {
     $koncertas = new DiskografijaKoncertai();
     $koncertas->koncertas = $_POST['koncertas'];
     $koncertas->pavadinimas = $_POST['pavadinimas'];
-
-    if($koncertas->save()) {
+    $koncertas->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
+    if ($koncertas->save()) {
         $session->message(3);
         redirect('video.php');
     }
 }
 
-if(isset($_GET['istrinti'])) {
+if (isset($_GET['istrinti'])) {
     $istrinti = DiskografijaCd::find($_GET['istrinti']);
-    if($istrinti->delete()) {
+    if ($istrinti->delete()) {
         $session->message(4);
         redirect('video.php');
     }
 }
 
-if(isset($_GET['istrinti_dvd'])) {
+if (isset($_GET['istrinti_dvd'])) {
     $istrinti = DiskografijaDvd::find($_GET['istrinti_dvd']);
-    if($istrinti->delete()) {
+    if ($istrinti->delete()) {
         $session->message(5);
         redirect('video.php');
     }
@@ -61,10 +61,10 @@ if(isset($_GET['istrinti_dvd'])) {
     <link href="css/slidebars.css" rel="stylesheet">
 
     <!--switchery-->
-    <link href="js/switchery/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="js/switchery/switchery.min.css" rel="stylesheet" type="text/css" media="screen"/>
 
     <!--common style-->
-    <link href="js/toastr-master/toastr.css" rel="stylesheet" type="text/css" />
+    <link href="js/toastr-master/toastr.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet">
 
@@ -74,9 +74,10 @@ if(isset($_GET['istrinti_dvd'])) {
     -->
 
     <!-- Include Editor style. -->
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_style.min.css' rel='stylesheet' type='text/css' />
-
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_editor.min.css' rel='stylesheet'
+          type='text/css'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/css/froala_style.min.css' rel='stylesheet'
+          type='text/css'/>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -161,13 +162,20 @@ if(isset($_GET['istrinti_dvd'])) {
                                         <th>#</th>
                                         <th>Koncertas</th>
                                         <th>Pavadinimas</th>
+                                        <th>Nuotrauka</th>
                                     </tr>
-                                    <?php foreach($konc as $kon) { ?>
+                                    <?php foreach ($konc as $kon) { ?>
                                         <tr>
                                             <td><?php echo $kon->id; ?></td>
                                             <td><?php echo $kon->koncertas; ?></td>
                                             <td><?php echo $kon->pavadinimas; ?></td>
-                                            <td><a href="?istrinti_koncerta=<?php echo $kon->id; ?>" class="btn btn-sm btn-danger">Ištrinti</a></td>
+                                            <td>
+                                                <img style="width: 100px; height: 50px"
+                                                     src="/assets/images/<?php echo $kon->nuotrauka; ?>" alt=""/>
+
+                                            </td>
+                                            <td><a href="?istrinti_koncerta=<?php echo $kon->id; ?>"
+                                                   class="btn btn-sm btn-danger">Ištrinti</a></td>
                                         </tr>
                                     <?php } ?>
                                     </thead>
@@ -176,18 +184,23 @@ if(isset($_GET['istrinti_dvd'])) {
                                     </tbody>
                                 </table>
                                 <div class="panel-body">
-                                    <form class="form-horizontal tasi-form" method="post">
+                                    <form class="form-horizontal tasi-form" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label class="col-sm-2 col-sm-2 control-label">Koncertas</label>
                                             <div class="col-sm-10">
+                                                <label class="col-sm-2 col-sm-2 control-label">Koncertas (URL)</label>
                                                 <input type="text" name="koncertas" class="form-control">
                                             </div>
-                                            <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
                                             <div class="col-sm-10">
+                                                <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
                                                 <input type="text" name="pavadinimas" class="form-control">
                                             </div>
+                                            <div class="col-sm-10">
+                                                <label class="col-lg-2 control-label">Pasirinkite nuotrauką</label>
+                                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                            </div>
                                         </div>
-                                        <input type="submit" name="koncertai" value="Išsaugoti" class="btn btn-success btn-md">
+                                        <input type="submit" name="koncertai" value="Išsaugoti"
+                                               class="btn btn-success btn-md">
                                     </form>
                                 </div>
                             </section>
@@ -225,13 +238,14 @@ if(isset($_GET['istrinti_dvd'])) {
 <script src="js/toastr-master/toastr.js"></script>
 <script src="js/toastr-init.js"></script>
 <!-- Include JS file. -->
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/js/froala_editor.min.js'></script>
+<script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.4.0/js/froala_editor.min.js'></script>
 
 <!--common scripts for all pages-->
 <script src="js/scripts.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
 //        tinymce.init({
 //            selector:'textarea',
 //            imageupload_url: '/my/uploader/path', // PHP (or other server side script)

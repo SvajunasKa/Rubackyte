@@ -702,8 +702,52 @@
     width: 344px;
     height: 181px;
     background-color: #4d3723;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+#dvd .right-side .youtube-g a img {
+    width: 334px;
+    height: 173px;
+}
+#dvd .right-side .youtube-g a .icon-play {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #fff;
+    border-radius: 100px;
+    top: 36%;
+    left: 40%;
+}
+#dvd .right-side .youtube-g a .icon-play:before {
+    content: "";
+    width: 0px;
+    height: 28px;
+    border-left: 2px solid #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+ }
+
+#dvd .right-side .youtube-g a .icon-play:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg) skew(-5deg, -5deg);
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 5px;
+ }
+
+#dvd .right-side .youtube-g a .icon-play:hover {
+     background-color: rgba(0, 0, 0, 0.5);
+ }
 
 #dvd .right-side .youtube-g:nth-child(3),
 #dvd .right-side .youtube-g:nth-child(5),
@@ -726,7 +770,6 @@
 #dvd .right-side a iframe {
     width: 334px;
     height: 171px;
-    margin: 5px 0 0 5px;
 }
 
 /** KONTAKTAI - PAGE **/
