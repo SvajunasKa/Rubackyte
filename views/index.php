@@ -1,6 +1,6 @@
 <?php require_once( 'includes/header.php' ); ?>
 <?php $biografija = Biografija::find( 1 ); ?>
-<section id="main_about">
+<section id="main_about" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-1 col-sm-10">
@@ -65,6 +65,13 @@
         </div>
     </div>
     <div class="bottom_img"></div>
+    <?php $nuotraukos = IntroPopUp::all(); ?>
+
+            <a class="intro" href="https://<?php echo $nuotraukos[0]->nuoroda ?>" target="_blank">
+                <img  src="assets/images/<?php echo $nuotraukos[0]->nuotrauka ?>"/>
+            </a>
+
+
 </section>
 
 <?php require_once( 'includes/index_footer.php' ); ?>

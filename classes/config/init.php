@@ -32,6 +32,7 @@ require_once("Models/Informacija.php");
 require_once("Models/Press.php");
 require_once("Models/Audio.php");
 require_once("Models/Interview.php");
+require_once ("Models/IntroPopUp.php");
 require_once("paginate.php");
 
 

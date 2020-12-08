@@ -14,7 +14,7 @@
                     <?php foreach($youtube as $you) { ?>
                         <?php if(!empty($you->nuotrauka)) {?>
                         <div class="youtube-g">
-                            <a href=<?php echo $you->koncertas; ?>" target="_blank">
+                            <a href=<?php echo $you->koncertas; ?> target="_blank">
                                 <img src="assets/images/<?php echo $you->nuotrauka; ?>" >
                                 <div class="icon-play"></div>
                             </a>
