@@ -47,12 +47,12 @@ $(document).ready(function () {
     });
     var item = window.sessionStorage.getItem("intro");
     if (!item){
-        $(".button").trigger( "click" );
+        $("#myModal").modal("show");
     }
 
     $(".close").click(function (){
-        console.log("clisk")
-       //$("#myModal").modal("hide");
+       $("#myModal").modal("hide");
+       //$(".modal-backdrop").remove();
     })
 
     // drop-down menu

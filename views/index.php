@@ -69,16 +69,24 @@
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" >&times;</button>
                 <div class="modal-body">
-                    <a class="intro" href="https://<?php echo $nuotraukos[0]->nuoroda ?>" target="_blank">
-                        <img class="intro-img" src="assets/images/<?php echo $nuotraukos[0]->nuotrauka ?>"/>
+                    <a class="intro" href="https://<?php
+                    if(!empty($nuotraukos[0])){
+                        echo $nuotraukos[0]->nuoroda;
+                    }
+                    ?>" target="_blank">
+                        <img class="intro-img" src="assets/images/<?php
+                        if(!empty($nuotraukos[0])){
+                            echo $nuotraukos[0]->nuotrauka;
+                        }
+                        ?>"/>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <button type="button" class="button" data-toggle="modal" data-target="#myModal"></button>
+
 
 
 </section>
