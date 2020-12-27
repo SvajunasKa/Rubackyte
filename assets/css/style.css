@@ -277,11 +277,20 @@
     margin-top: 50px;
 }
 
-#main_about_her img {
+#main_about_her img:not(.intro img) {
     height: 219px;
     width: 346px;
     margin: 0 auto;
     display: block;
+}
+.intro-img{
+    width: 100%;
+}
+
+button.close{
+    position: absolute;
+    right: 0;
+    z-index: 9;
 }
 
 #main_about_her .bottom_img {
@@ -666,9 +675,9 @@
 }
 
 #dvd .right-side {
-    width: 65%;
-    display: inline-block;
-    float: left;
+    /*width: 65%;*/
+    /*display: inline-block;*/
+    /*float: left;*/
 }
 
 #dvd .dvd_box {
@@ -749,13 +758,13 @@
      background-color: rgba(0, 0, 0, 0.5);
  }
 
-#dvd .right-side .youtube-g:nth-child(3),
-#dvd .right-side .youtube-g:nth-child(5),
-#dvd .right-side .youtube-g:nth-child(7),
-#dvd .right-side .youtube-g:nth-child(9),
-#dvd .right-side .youtube-g:nth-child(11){
-    margin-right: 0px;
-}
+/*#dvd .right-side .youtube-g:nth-child(4),*/
+/*#dvd .right-side .youtube-g:nth-child(10),*/
+/*#dvd .right-side .youtube-g:nth-child(11),*/
+/*#dvd .right-side .youtube-g:nth-child(15),*/
+/*#dvd .right-side .youtube-g:nth-child(19){*/
+/*    margin-right: 0px;*/
+/*}*/
 
 #dvd .right-side .youtube-g p {
     /*position: absolute;*/

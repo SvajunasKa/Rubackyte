@@ -116,9 +116,9 @@ if (isset($_POST['introPopUp'])) {
         </div>
         <div class="page-head">
             <h3>
-                Puslapis - Video
+                Puslapis - Intro
             </h3>
-            <span class="sub-title">Pagrindinis / Video</span>
+            <span class="sub-title">Pagrindinis / Intro PopUp</span>
         </div>
         <div class="wrapper">
 
@@ -126,7 +126,7 @@ if (isset($_POST['introPopUp'])) {
                 <header class="panel-heading tab-dark ">
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a data-toggle="tab" href="#profile">Koncertiniai Įrašai</a>
+                            <a data-toggle="tab" href="#profile">Intro PopUp</a>
                         </li>
                     </ul>
                 </header>
@@ -135,7 +135,7 @@ if (isset($_POST['introPopUp'])) {
                         <div id="profile" class="tab-pane">
                             <section class="panel">
                                 <header class="panel-heading">
-                                    Koncertų youtube linkai
+                                    Intro PopUp
                                 </header>
                                 <?php $konc = IntroPopUp::all(); ?>
                                 <table class="table table-hover">
@@ -167,11 +167,11 @@ if (isset($_POST['introPopUp'])) {
                                     <form class="form-horizontal tasi-form" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <div class="col-sm-10">
-                                                <label class="col-sm-2 col-sm-2 control-label"> Nuoroda</label>
+                                                <label class=" col-sm-3 control-label"> Nuoroda (su https)</label>
                                                 <input type="text" name="nuoroda" class="form-control">
                                             </div>
                                             <div class="col-sm-10">
-                                                <label class="col-lg-2 control-label">Pasirinkite nuotrauką</label>
+                                                <label class=" col-sm-3 control-label">Pasirinkite nuotrauką</label>
                                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                             </div>
                                         </div>

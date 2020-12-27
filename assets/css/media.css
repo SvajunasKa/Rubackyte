@@ -96,7 +96,7 @@
         margin-left: 60px;
     }
 
-    #main_about_her img {
+    #main_about_her img:not(.intro img) {
         height: 169px;
         width: 266px;
     }
@@ -632,18 +632,23 @@
     .on-mobile-koncertai-second .metai {
         width: 100%;
     }
-    fa
+
 }
 
 @media only screen and (max-width: 385px) {
     #dvd .right-side .youtube-g {
         width: 264px;
-        height: 164px;
+        height: 200px;
     }
 
     #dvd .right-side .youtube-g a {
         width: 254px;
         height: 130px;
+    }
+
+    #dvd .right-side .youtube-g a img {
+        width: 243px;
+        height: 121px;
     }
 
     #dvd .right-side a iframe {
