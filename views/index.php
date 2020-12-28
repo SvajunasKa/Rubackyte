@@ -1,18 +1,18 @@
-<?php require_once( 'includes/header.php' ); ?>
-<?php $biografija = Biografija::find( 1 ); ?>
-<section id="main_about">
+<?php require_once('includes/header.php'); ?>
+<?php $biografija = Biografija::find(1); ?>
+<section id="main_about" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-1 col-sm-10">
-				<?php if ( $_SESSION['lang'] == 'lt' ) {
-					echo $biografija->aprasymasLt;
-				} ?>
-				<?php if ( $_SESSION['lang'] == 'en' ) {
-					echo $biografija->aprasymasEn;
-				} ?>
-				<?php if ( $_SESSION['lang'] == 'fr' ) {
-					echo $biografija->aprasymasFr;
-				} ?>
+                <?php if ($_SESSION['lang'] == 'lt') {
+                    echo $biografija->aprasymasLt;
+                } ?>
+                <?php if ($_SESSION['lang'] == 'en') {
+                    echo $biografija->aprasymasEn;
+                } ?>
+                <?php if ($_SESSION['lang'] == 'fr') {
+                    echo $biografija->aprasymasFr;
+                } ?>
             </div>
         </div>
     </div>
@@ -23,51 +23,75 @@
         <div class="row">
             <div class="col-sm-offset-1 col-sm-10">
                 <div class="col-sm-6 padding-none jquery_1">
-					<?php if ( $_SESSION['lang'] == 'lt' ) {
-						echo $biografija->aprasymasLt2;
-					} ?>
-					<?php if ( $_SESSION['lang'] == 'en' ) {
-						echo $biografija->aprasymasEn2;
-					} ?>
-					<?php if ( $_SESSION['lang'] == 'fr' ) {
-						echo $biografija->aprasymasFr2;
-					} ?>
+                    <?php if ($_SESSION['lang'] == 'lt') {
+                        echo $biografija->aprasymasLt2;
+                    } ?>
+                    <?php if ($_SESSION['lang'] == 'en') {
+                        echo $biografija->aprasymasEn2;
+                    } ?>
+                    <?php if ($_SESSION['lang'] == 'fr') {
+                        echo $biografija->aprasymasFr2;
+                    } ?>
                     <!--  <p class="about_p"></p>-->
 
                     <img class="main_img_about" src="assets/images/MergedLayers.png" alt="">
                 </div>
                 <div class="col-sm-6 padding-none left-margin jquery_2">
                     <img src="assets/images/Muza-IMG.png" alt="">
-					<?php if ( $_SESSION['lang'] == 'lt' ) {
-						echo $biografija->aprasymasLt3;
-					} ?>
-					<?php if ( $_SESSION['lang'] == 'en' ) {
-						echo $biografija->aprasymasEn3;
-					} ?>
-					<?php if ( $_SESSION['lang'] == 'en' ) {
-						echo "<p>Download
+                    <?php if ($_SESSION['lang'] == 'lt') {
+                        echo $biografija->aprasymasLt3;
+                    } ?>
+                    <?php if ($_SESSION['lang'] == 'en') {
+                        echo $biografija->aprasymasEn3;
+                    } ?>
+                    <?php if ($_SESSION['lang'] == 'en') {
+                        echo "<p>Download
                    <a href=\"http://muza.fr/files/Biography-short-EN.pdf\" target='_blank'>short</a> or 
                     <a href=\"http://muza.fr/files/Biography-long-EN.pdf\" target='_blank'>full</a> version of biography in PDF</p>";
-					} ?>
+                    } ?>
 
-					<?php if ( $_SESSION['lang'] == 'fr' ) {
-						echo $biografija->aprasymasFr3;
-					} ?>
-	                <?php if ( $_SESSION['lang'] == 'fr' ) {
-		                echo "<p>Biographie 
+                    <?php if ($_SESSION['lang'] == 'fr') {
+                        echo $biografija->aprasymasFr3;
+                    } ?>
+                    <?php if ($_SESSION['lang'] == 'fr') {
+                        echo "<p>Biographie 
                    <a href=\"http://muza.fr/files/Biographie-courte-FR.pdf\" target='_blank'>courte en PDF</a> </p> 
                     <p>Biographie <a href=\"http://muza.fr/files/Biographie-longue-FR.pdf\" target='_blank'>longue en PDF</a></p>";
-	                } ?>
+                    } ?>
                 </div>
 
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom_img"></div>
+    <?php $nuotraukos = IntroPopUp::all(); ?>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" >&times;</button>
+                <div class="modal-body">
+                    <a class="intro" href="https://<?php
+                    if(!empty($nuotraukos[0])){
+                        echo $nuotraukos[0]->nuoroda;
+                    }
+                    ?>" target="_blank">
+                        <img class="intro-img" src="assets/images/<?php
+                        if(!empty($nuotraukos[0])){
+                            echo $nuotraukos[0]->nuotrauka;
+                        }
+                        ?>"/>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bottom_img"></div>
+
+
+
 </section>
 
-<?php require_once( 'includes/index_footer.php' ); ?>
+<?php require_once('includes/index_footer.php'); ?>
 
 <script type="text/javascript">
     $(function () {

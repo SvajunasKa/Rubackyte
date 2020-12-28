@@ -31,6 +31,7 @@
                 <li><a href="spauda.php">Spauda</a></li>
                 <li><a href="audio.php">Audio</a></li>
                 <li><a href="interview.php">Interviu</a></li>
+                <li><a href="introPopUp.php">Intro Popup'as</a></li>
             </ul>
         </li>
     </ul>

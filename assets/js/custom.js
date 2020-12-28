@@ -11,7 +11,6 @@ $(document).ready(function () {
 
     });
     $(window).keydown(function (e) {
-        console.log('aaa');
         var close = $('.close_btn').closest('section');
         if (e.keyCode == 27) {
             close.fadeOut('slow');
@@ -40,6 +39,22 @@ $(document).ready(function () {
         },
         type: 'image'
     });
+
+    // intro popup
+
+    $(document).ready(function (){
+        window.sessionStorage.setItem("intro", "intro")
+    });
+    var item = window.sessionStorage.getItem("intro");
+    if (!item){
+        $("#myModal").modal("show");
+    }
+
+    $(".close").click(function (){
+       $("#myModal").modal("hide");
+       //$(".modal-backdrop").remove();
+    })
+
     // drop-down menu
     $('.bottom-navbar .menu-item1').click(function (e) {
         e.preventDefault();
