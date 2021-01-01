@@ -21,6 +21,7 @@ if(isset($_POST['koncertai'])) {
     $koncertas = new Audio();
     $koncertas->koncertas = $_POST['koncertas'];
     $koncertas->pavadinimas = $_POST['pavadinimas'];
+    $koncertas->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
 
     if($koncertas->save()) {
         $session->message(3);
@@ -139,6 +140,11 @@ if(isset($_POST['koncertai'])) {
                                             <td><?php echo $kon->id; ?></td>
                                             <td><?php echo $kon->koncertas; ?></td>
                                             <td><?php echo $kon->pavadinimas; ?></td>
+                                            <td>
+                                                <img style="width: 100px; height: 50px"
+                                                     src="/assets/images/<?php echo $kon->nuotrauka; ?>" alt=""/>
+
+                                            </td>
                                             <td><a href="?istrinti_koncerta=<?php echo $kon->id; ?>" class="btn btn-sm btn-danger">Ištrinti</a></td>
                                         </tr>
                                     <?php } ?>
@@ -148,7 +154,7 @@ if(isset($_POST['koncertai'])) {
                                     </tbody>
                                 </table>
                                 <div class="panel-body">
-                                    <form class="form-horizontal tasi-form" method="post">
+                                    <form class="form-horizontal tasi-form" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
 
                                             <div class="col-sm-10">
@@ -159,6 +165,10 @@ if(isset($_POST['koncertai'])) {
                                             <div class="col-sm-10">
                                                 <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
                                                 <input type="text" name="pavadinimas" class="form-control">
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <label class="col-lg-2 control-label">Pasirinkite nuotrauką</label>
+                                                <input type="file" name="fileToUpload" id="fileToUpload">
                                             </div>
                                         </div>
                                         <input type="submit" name="koncertai" value="Išsaugoti" class="btn btn-success btn-md">

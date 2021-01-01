@@ -9,8 +9,9 @@
 class Audio extends DbOptions
 {
     protected static $db_table = "audio";
-    protected static $db_table_fields = array('id', 'koncertas', 'pavadinimas');
+    protected static $db_table_fields = array('id', 'koncertas', 'pavadinimas', 'nuotrauka');
     public $id;
     public $koncertas;
     public $pavadinimas;
+    public $nuotrauka;
 }

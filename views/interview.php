@@ -12,15 +12,23 @@
                     </div>
 
                     <?php foreach($youtube as $you) { ?>
-
-                        <div class="youtube-g">
-                            <a href="#" target="_blank">
-                                <iframe src="<?php echo $you->interviu; ?>" frameborder="0" width="500" height="280"></iframe>
-                            </a>
-                            <p><?php echo $you->pavadinimas; ?></p>
-                        </div>
+                        <?php if(!empty($you->nuotrauka)) {?>
+                            <div class="youtube-g">
+                                <a href=<?php echo $you->interviu; ?> target="_blank">
+                                    <img src="assets/images/<?php echo $you->nuotrauka; ?>" >
+                                    <div class="icon-play"></div>
+                                </a>
+                                <p><?php echo $you->pavadinimas; ?></p>
+                            </div>
+                        <?php } else {?>
+                            <div class="youtube-g">
+                                <a href="#" target="_blank">
+                                    <iframe src="<?php echo $you->interviu; ?>" frameborder="0" width="500" height="280" target="_blank"></iframe>
+                                </a>
+                                <p><?php echo $you->pavadinimas; ?></p>
+                            </div>
+                        <?php } ?>
                     <?php } ?>
-
                 </div>
             </div>
         </div>

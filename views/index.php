@@ -65,12 +65,16 @@
     </div>
     </div>
     <div class="bottom_img"></div>
-    <?php $nuotraukos = IntroPopUp::all(); ?>
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+    <?php $nuotraukos = IntroPopUp::all();
+    if(!empty($nuotraukos[0])){
+        echo '<div class="modal fade" id="myModal" role="dialog">
+ <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" >&times;</button>
-                <div class="modal-body">
+                <div class="modal-body">';
+    }
+    ?>
+
                     <a class="intro" href="https://<?php
                     if(!empty($nuotraukos[0])){
                         echo $nuotraukos[0]->nuoroda;
@@ -86,6 +90,7 @@
             </div>
         </div>
     </div>
+
 
 
 

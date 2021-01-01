@@ -52,7 +52,6 @@ $(document).ready(function () {
 
     $(".close").click(function (){
        $("#myModal").modal("hide");
-       //$(".modal-backdrop").remove();
     })
 
     // drop-down menu

@@ -20,6 +20,7 @@ if(isset($_POST['interviu'])) {
     $interviews = new Interview();
     $interviews->pavadinimas = $_POST['pavadinimas'];
     $interviews->interviu = $_POST['interviu'];
+    $interviews->nuotrauka = imageUpload($_FILES['fileToUpload'], 1);
 
     if($interviews->save()) {
         $session->message(3);
@@ -132,19 +133,24 @@ if(isset($_POST['interviu'])) {
                                         <th>#</th>
                                         <th>Interviu</th>
                                         <th>Pavadinimas</th>
+                                        <th>Nuotrauka</th>
                                     </tr>
                                     <?php foreach($interviews as $inter) { ?>
                                         <tr>
                                             <td><?php echo $inter->id; ?></td>
                                             <td><?php echo $inter->pavadinimas; ?></td>
                                             <td><?php echo $inter->interviu; ?></td>
+                                            <td>
+                                                <img style="width: 100px; height: 50px"
+                                                     src="/assets/images/<?php echo $inter->nuotrauka; ?>" alt=""/>
+                                            </td>
                                             <td><a href="?istrinti_interviu=<?php echo $inter->id; ?>" class="btn btn-sm btn-danger">Ištrinti</a></td>
                                         </tr>
                                     <?php } ?>
                                     </thead>
                                 </table>
                                 <div class="panel-body">
-                                    <form class="form-horizontal tasi-form" method="post">
+                                    <form class="form-horizontal tasi-form" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <div class="col-sm-10">
                                                 <label class="col-sm-2 col-sm-2 control-label">Interviu (nuoroda)</label>
@@ -154,6 +160,10 @@ if(isset($_POST['interviu'])) {
                                             <div class="col-sm-10">
                                                 <label class="col-sm-2 col-sm-2 control-label"> Pavadinimas</label>
                                                 <input type="text" name="pavadinimas" class="form-control">
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <label class="col-lg-2 control-label">Pasirinkite nuotrauką</label>
+                                                <input type="file" name="fileToUpload" id="fileToUpload">
                                             </div>
                                         </div>
                                         <input type="submit" name="koncertai" value="Išsaugoti" class="btn btn-success btn-md">
