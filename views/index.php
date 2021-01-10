@@ -70,12 +70,12 @@
         echo '<div class="modal fade" id="myModal" role="dialog">
  <div class="modal-dialog">
             <div class="modal-content">
-                <button type="button" class="close" >&times;</button>
+                <button type="button" class="close_btn" >X</button>
                 <div class="modal-body">';
     }
     ?>
 
-                    <a class="intro" href="https://<?php
+                    <a class="intro" href="<?php
                     if(!empty($nuotraukos[0])){
                         echo $nuotraukos[0]->nuoroda;
                     }

@@ -781,6 +781,10 @@ button.close{
     height: 171px;
 }
 
+.modal-body{
+    background: #1f1106;
+}
+
 /** KONTAKTAI - PAGE **/
 #kontaktai {
     padding: 70px 0;
@@ -1211,6 +1215,7 @@ footer .social-media li {
     text-decoration: none;
     -webkit-transition: ease-in .3s;
     transition: ease-in .3s;
+    z-index: 1;
 }
 
 .close_btn:hover {

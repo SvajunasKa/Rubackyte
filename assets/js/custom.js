@@ -50,7 +50,7 @@ $(document).ready(function () {
         $("#myModal").modal("show");
     }
 
-    $(".close").click(function (){
+    $(".close_btn").click(function (){
        $("#myModal").modal("hide");
     })
 
